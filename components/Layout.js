@@ -44,7 +44,7 @@ class Layout extends React.Component {
         <Head>
           <title>Next.js Starter</title>
           <meta name="description" content="Next.js Starter - Forty" />
-          <link href="/static/css/skel.css" rel="stylesheet" />
+          <link href="/css/skel.css" rel="stylesheet" />
           <link
             href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
             rel="stylesheet"
