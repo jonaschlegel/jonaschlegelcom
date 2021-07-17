@@ -1,31 +1,21 @@
 {
-  "name": "jonaschlegel.com",
-  "description": "Personal website",
+  "name": "nextjs-forty",
   "version": "1.0.0",
-  "author": "Jona Schlegel",
-  "private": true,
-  "dependencies": {
-    "gatsby": "^2.20.12",
-    "gatsby-plugin-manifest": "^2.3.3",
-    "gatsby-plugin-offline": "^3.1.2",
-    "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sass": "^2.2.1",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-images": "^1.0.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
   },
-  "devDependencies": {
-    "prettier": "^2.0.2"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.35.2"
   }
 }
