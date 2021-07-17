@@ -15,7 +15,7 @@ export default () => (
               <h3>Aliquam</h3>
               <p>Ipsum dolor sit amet</p>
             </header>
-            <Link href="/landing">
+            <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -24,7 +24,7 @@ export default () => (
               <h3>Tempus</h3>
               <p>feugiat amet tempus</p>
             </header>
-            <Link href="/landing">
+            <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -33,7 +33,7 @@ export default () => (
               <h3>Magna</h3>
               <p>Lorem etiam nullam</p>
             </header>
-            <Link href="/landing">
+            <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -42,7 +42,7 @@ export default () => (
               <h3>Ipsum</h3>
               <p>Nisl sed aliquam</p>
             </header>
-            <Link href="/landing">
+            <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -51,7 +51,7 @@ export default () => (
               <h3>Consequat</h3>
               <p>Ipsum dolor sit amet</p>
             </header>
-            <Link href="/landing">
+            <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -60,7 +60,7 @@ export default () => (
               <h3>Etiam</h3>
               <p>Feugiat amet tempus</p>
             </header>
-            <Link href="/landing">
+            <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -81,7 +81,7 @@ export default () => (
             </p>
             <ul className="actions">
               <li>
-                <Link href="/landing">
+                <Link href="/portfolio">
                   <a className="button next">Get Started</a>
                 </Link>
               </li>

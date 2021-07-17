@@ -13,13 +13,13 @@ const Menu = (props) => (
           </Link>
         </li>
         <li>
-          <Link href="/landing">
+          <Link href="/portfolio">
             <a>
               <span onClick={props.onToggleMenu}>Portfolio</span>
             </a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/generic">
             <a>
               <span onClick={props.onToggleMenu}>Generic</span>
@@ -44,7 +44,7 @@ const Menu = (props) => (
           <a href="#" className="button fit">
             Log In
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
     <a className="close" onClick={props.onToggleMenu} href="javascript:;">
