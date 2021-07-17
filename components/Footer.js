@@ -1,18 +1,58 @@
 const Footer = (props) => (
-    <footer id="footer">
-        <div className="inner">
-            <ul className="icons">
-                <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
-                <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
-                <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
-                <li><a href="#" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
-                <li><a href="#" className="icon alt fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            </ul>
-            <ul className="copyright">
-                <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
-)
+  <footer id="footer">
+    <div className="inner">
+      <ul className="icons">
+        <li>
+          <a href="https://twitter.com/jonaschlegel" className="icon">
+            <span className="label">Twitter</span>
+            <i className="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jona.schlegel/" className="icon">
+            <span className="label">Instagram</span>
+            <i className="fab fa-instagram fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jonaschlegel" className="icon">
+            <span className="label">GitHub</span>
+            <i className="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jona-schlegel-942879153/"
+            className="icon"
+          >
+            <span className="label">LinkedIn</span>
+            <i className="fab fa-linkedin fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://orcid.org/0000-0002-4190-9566" className="icon">
+            <span className="label">OrcID</span>
+            <i className="fab fa-orcid fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.researchgate.net/profile/Jona-Schlegel"
+            className="icon"
+          >
+            <span className="label">ResearchGate</span>
+            <i className="fab fa-researchgate fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+      <ul className="copyright">
+        <li>&copy; Jona Schlegel</li>
+        <li>
+          Design: <a href="https://html5up.net">HTML5 UP</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+);
 
-export default Footer
+export default Footer;

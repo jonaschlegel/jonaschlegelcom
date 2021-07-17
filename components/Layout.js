@@ -2,7 +2,6 @@ import React from 'react';
 
 import Head from 'next/head';
 
-import Contact from './Contact';
 import Footer from './Footer';
 import Header from './Header';
 import Menu from './Menu';
@@ -47,7 +46,7 @@ class Layout extends React.Component {
           <meta name="description" content="Next.js Starter - Forty" />
           <link href="/static/css/skel.css" rel="stylesheet" />
           <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
             rel="stylesheet"
           />
           <link
@@ -59,7 +58,7 @@ class Layout extends React.Component {
         <div id="wrapper">
           <Header onToggleMenu={this.handleToggleMenu} />
           {this.props.children}
-          <Contact />
+          {/* <Contact /> */}
           <Footer />
         </div>
         <Menu onToggleMenu={this.handleToggleMenu} />
