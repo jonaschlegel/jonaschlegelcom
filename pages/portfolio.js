@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-
 import BannerLanding from '../components/BannerLanding';
 import Layout from '../components/Layout';
 
@@ -12,7 +11,7 @@ export default () => (
     </Head>
 
     <div>
-      <BannerLanding />
+      <BannerLanding title="Portfolio" />
 
       <div id="main">
         <section id="one">
