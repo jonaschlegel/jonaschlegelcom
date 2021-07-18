@@ -1,7 +1,5 @@
-import React from 'react';
-
 import Head from 'next/head';
-
+import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Menu from './Menu';
@@ -42,7 +40,7 @@ class Layout extends React.Component {
         }`}
       >
         <Head>
-          <title>Next.js Starter</title>
+          <title>Jona Schlegel</title>
           <meta name="description" content="Next.js Starter - Forty" />
           <link href="/css/skel.css" rel="stylesheet" />
           <link

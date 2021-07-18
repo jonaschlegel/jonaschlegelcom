@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import Banner from '../components/Banner';
 import Layout from '../components/Layout';
 
@@ -12,53 +11,58 @@ export default () => (
         <section id="one" className="tiles">
           <article style={{ backgroundImage: `url('/images/pic01.jpg')` }}>
             <header className="major">
-              <h3>Aliquam</h3>
-              <p>Ipsum dolor sit amet</p>
+              <h3>Excavations</h3>
+              <p>
+                A collection of all the archaeological excavation projects I was
+                a part.
+              </p>
             </header>
             <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
-          <article style={{ backgroundImage: `url('/images/pic02.jpg')` }}>
+          <article
+            style={{ backgroundImage: `url('/images/programming.jpg')` }}
+          >
             <header className="major">
-              <h3>Tempus</h3>
-              <p>feugiat amet tempus</p>
+              <h3>Programming</h3>
+              <p>Projects like hackathons</p>
             </header>
             <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
-          <article style={{ backgroundImage: `url('/images/pic03.jpg')` }}>
+          <article style={{ backgroundImage: `url('/images/Magnetic.jpg')` }}>
             <header className="major">
-              <h3>Magna</h3>
-              <p>Lorem etiam nullam</p>
+              <h3>Magnetic</h3>
+              <p>Different projects focused on the magnetic data collection.</p>
             </header>
             <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
-          <article style={{ backgroundImage: `url('/images/pic04.jpg')` }}>
+          <article style={{ backgroundImage: `url('/images/Radar.jpg')` }}>
             <header className="major">
-              <h3>Ipsum</h3>
-              <p>Nisl sed aliquam</p>
+              <h3>Ground penetrating radar</h3>
+              <p>Another set of geophysical projects</p>
             </header>
             <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
-          <article style={{ backgroundImage: `url('/images/pic05.jpg')` }}>
+          <article style={{ backgroundImage: `url('/images/art.jpg')` }}>
             <header className="major">
-              <h3>Consequat</h3>
-              <p>Ipsum dolor sit amet</p>
+              <h3>Art</h3>
+              <p>Art porjects with the focus on archaeology.</p>
             </header>
             <Link href="/portfolio">
               <a className="link primary"></a>
             </Link>
           </article>
-          <article style={{ backgroundImage: `url('/images/pic06.jpg')` }}>
+          <article style={{ backgroundImage: `url('/images/writing.jpg')` }}>
             <header className="major">
-              <h3>Etiam</h3>
-              <p>Feugiat amet tempus</p>
+              <h3>Writing</h3>
+              <p>Published papers, article, abstracts.</p>
             </header>
             <Link href="/portfolio">
               <a className="link primary"></a>
@@ -68,21 +72,17 @@ export default () => (
         <section id="two">
           <div className="inner">
             <header className="major">
-              <h2>Massa libero</h2>
+              <h2>Blog</h2>
             </header>
             <p>
-              Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-              libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-              Pellentesque condimentum sem. In efficitur ligula tate urna.
-              Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-              Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-              libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra
-              et feugiat tempus.
+              In the next few weeks different topics that are interesting for me
+              focusing on archaeology, data collection and coding will appear
+              here.
             </p>
             <ul className="actions">
               <li>
-                <Link href="/portfolio">
-                  <a className="button next">Get Started</a>
+                <Link href="/blog">
+                  <a className="button next">Further reading</a>
                 </Link>
               </li>
             </ul>
