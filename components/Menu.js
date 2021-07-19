@@ -19,6 +19,13 @@ const Menu = (props) => (
             </a>
           </Link>
         </li>
+        <li>
+          <Link href="/blog">
+            <a>
+              <span onClick={props.onToggleMenu}>Blog</span>
+            </a>
+          </Link>
+        </li>
         {/* <li>
           <Link href="/generic">
             <a>

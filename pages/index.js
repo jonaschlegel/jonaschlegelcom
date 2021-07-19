@@ -17,7 +17,7 @@ export default () => (
                 a part.
               </p>
             </header>
-            <Link href="/portfolio">
+            <Link href="/generic">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -28,7 +28,7 @@ export default () => (
               <h3>Programming</h3>
               <p>Projects like hackathons</p>
             </header>
-            <Link href="/portfolio">
+            <Link href="/generic">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -37,7 +37,7 @@ export default () => (
               <h3>Magnetic</h3>
               <p>Different projects focused on the magnetic data collection.</p>
             </header>
-            <Link href="/portfolio">
+            <Link href="/generic">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -46,7 +46,7 @@ export default () => (
               <h3>Ground penetrating radar</h3>
               <p>Another set of geophysical projects</p>
             </header>
-            <Link href="/portfolio">
+            <Link href="/generic">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -55,7 +55,7 @@ export default () => (
               <h3>Art</h3>
               <p>Art porjects with the focus on archaeology.</p>
             </header>
-            <Link href="/portfolio">
+            <Link href="/generic">
               <a className="link primary"></a>
             </Link>
           </article>
@@ -64,7 +64,7 @@ export default () => (
               <h3>Writing</h3>
               <p>Published papers, article, abstracts.</p>
             </header>
-            <Link href="/portfolio">
+            <Link href="/generic">
               <a className="link primary"></a>
             </Link>
           </article>
