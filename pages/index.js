@@ -68,6 +68,15 @@ export default () => (
               <a className="link primary"></a>
             </Link>
           </article>
+          <article style={{ backgroundImage: `url('/images/writing.jpg')` }}>
+            <header className="major">
+              <h3>3D Models</h3>
+              <p>Different models from all around the world.</p>
+            </header>
+            <Link href="/portfolio/3d-models">
+              <a className="link primary"></a>
+            </Link>
+          </article>
         </section>
         <section id="two">
           <div className="inner">
