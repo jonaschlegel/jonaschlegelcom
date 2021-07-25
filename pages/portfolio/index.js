@@ -19,6 +19,9 @@ export default () => (
             <header className="major">
               <h2>Sed amet aliquam</h2>
             </header>
+            <Link href="/portfolio/3d-models">
+              <a className="link primary"></a>
+            </Link>
             <p>
               Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
               magna sed nunc rhoncus condimentum sem. In efficitur ligula tate
