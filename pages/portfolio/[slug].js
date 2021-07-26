@@ -62,6 +62,34 @@ const portfolioItems = {
       </>
     ),
   },
+  writing: {
+    id: 1,
+    title: 'writingAndPublishing',
+    shortdescription:
+      'Here you find papers, article and other scientific writing contributions I was a part.',
+    content: (
+      <>
+        <p>This article was published in June 2021.</p>
+
+        <object
+          data="../public/ocuments/remotesensing-13-02515-v2.pdf"
+          type="application/pdf"
+          width="100%"
+          height="100%"
+        >
+          <p>
+            <b>Example fallback content</b>: This browser does not support PDFs.
+            Please download the PDF to view it:
+            <br></br>
+            <a href="https://www.mdpi.com/2072-4292/13/13/2515/htm#">
+              Download PDF
+            </a>
+            .
+          </p>
+        </object>
+      </>
+    ),
+  },
 };
 
 export default () => {

@@ -64,7 +64,7 @@ export default () => (
               <h3>Writing</h3>
               <p>Published papers, article, abstracts.</p>
             </header>
-            <Link href="/generic">
+            <Link href="/portfolio/writing">
               <a className="link primary"></a>
             </Link>
           </article>
