@@ -1,8 +1,7 @@
 import Head from 'next/head';
-
 import Layout from '../components/Layout';
 
-export default () => (
+export default function Element () { return (
   <Layout>
     <Head>
       <title>Elements Page</title>
@@ -751,4 +750,4 @@ export default () => (
       </section>
     </div>
   </Layout>
-);
+);}

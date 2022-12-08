@@ -17,9 +17,7 @@ export default () => (
                 a part.
               </p>
             </header>
-            <Link href="/generic">
-              <a className="link primary"></a>
-            </Link>
+            <Link href="/portfolio/excavations" className="link primary"></Link>
           </article>
           <article
             style={{ backgroundImage: `url('/images/programming.jpg')` }}
@@ -28,54 +26,42 @@ export default () => (
               <h3>Programming</h3>
               <p>Projects like hackathons</p>
             </header>
-            <Link href="/generic">
-              <a className="link primary"></a>
-            </Link>
+            <Link href="/portfolio/programming" className="link primary"></Link>
           </article>
           <article style={{ backgroundImage: `url('/images/Magnetic.jpg')` }}>
             <header className="major">
               <h3>Magnetic</h3>
               <p>Different projects focused on the magnetic data collection.</p>
             </header>
-            <Link href="/generic">
-              <a className="link primary"></a>
-            </Link>
+            <Link href="/portfolio/magnetic" className="link primary"></Link>
           </article>
           <article style={{ backgroundImage: `url('/images/Radar.jpg')` }}>
             <header className="major">
               <h3>Ground penetrating radar</h3>
               <p>Another set of geophysical projects</p>
             </header>
-            <Link href="/generic">
-              <a className="link primary"></a>
-            </Link>
+            <Link href="/portfolio/GPR" className="link primary"></Link>
           </article>
           <article style={{ backgroundImage: `url('/images/art.jpg')` }}>
             <header className="major">
               <h3>Art</h3>
               <p>Art porjects with the focus on archaeology.</p>
             </header>
-            <Link href="/generic">
-              <a className="link primary"></a>
-            </Link>
+            <Link href="/portfolio/art" className="link primary"></Link>
           </article>
           <article style={{ backgroundImage: `url('/images/writing.jpg')` }}>
             <header className="major">
               <h3>Writing</h3>
               <p>Published papers, article, abstracts.</p>
             </header>
-            <Link href="/portfolio/writing">
-              <a className="link primary"></a>
-            </Link>
+            <Link href="/portfolio/writing" className="link primary"></Link>
           </article>
           <article style={{ backgroundImage: `url('/images/writing.jpg')` }}>
             <header className="major">
               <h3>3D Models</h3>
               <p>Different models from all around the world.</p>
             </header>
-            <Link href="/portfolio/3d-models">
-              <a className="link primary"></a>
-            </Link>
+            <Link href="/portfolio/3d-models" className="link primary"></Link>
           </article>
         </section>
         <section id="two">
@@ -90,8 +76,8 @@ export default () => (
             </p>
             <ul className="actions">
               <li>
-                <Link href="/blog">
-                  <a className="button next">Further reading</a>
+                <Link href="/blog" className="button next">
+                  Further reading
                 </Link>
               </li>
             </ul>
