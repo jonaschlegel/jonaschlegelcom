@@ -5,12 +5,75 @@ import Layout from '../../components/Layout';
 const blogItems = {
   introduction: {
     id: 1,
-    title: 'What will this blog be about and who am I',
+    title: 'Introduction',
     shortdescription:
       'This blog post will focus on what the purpose is of this blog, and what kind of topics I want to cover and how regularly I will try to upload a post.',
     content: (
       <>
-        <p></p>
+        <p>
+          Welcome to my blog! <br />
+          My name is Jona Schlegel and I am a female archaeologist working at
+          the Ludwig Boltzmann Institute for Archaeological Prospection and
+          Virtual Archaeology (LBI ArchPro), which is located in Vienna,
+          Austria. Originally I am from Berlin, where I also studied restoration
+          and conservation/ field archaeology in my bachelor (2012-2016) and
+          landscape archaeology in my master (2016-2018). Thereby, I learned
+          different excavation and documentation methods, that I was then also
+          able to apply at different projects all around Europe. In my master
+          studies I then focused more on prospection methods like magnetic,
+          electric resistivity and ground-penetrating radar (GPR), which lead to
+          me leading the data acquisition of magnetic and GPR data of a
+          Hellenistic and Roman settlement in Turkey to determine the dimension
+          and structure of the site. If you are interested in all the projects I
+          participated in, check out the portfolio section of the website to
+          learn more on the projects itself and the skills I gained from working
+          there and if information on these are already published or still
+          ongoing.
+          <br />
+          These interests in geophysical and archaeological prospection lead me
+          towards the LBI ArchPro and wanting to participate in such a research
+          and academic environment. So, I have been with the LBI ArchPro since
+          May 2018, where I have been working on field projects and acquiring
+          magnetic and ground-penetrating radar data on archaeological sites in
+          Bulgaria, Swiss, Serbia and mainly Austria. Furthermore, I am also
+          assigned in working on the interpretation and analysis of the acquired
+          data in geographic information systems (GIS). Additionally I was also
+          taught to collect data with the RIEGL VZ400 and RIEGL VZ400i, which
+          are terrestrial laser scanner (TLS) and how to process them with
+          RiProcess. 
+          <p></p>
+          In addition to my work at the Ludwig Boltzmann Institute, I am also
+          pursuing my PhD at the University of Vienna. My research focuses on
+          spatio-temporal reasoning in archaeology, which involves using spatial
+          and temporal data to understand the relationships between different
+          events and phenomena in the past.
+          <br />
+          Recently, I have also become involved in the INDIGO (IN-ventory and
+          DI-ssemination of G-raffiti along the d-O-naukanal) project, which is
+          an initiative to inventory and disseminate graffiti along the Danube
+          Canal in Vienna. As part of this project, I am working on a graffiti
+          thesaurus and developing an online platform to present the collected
+          graffiti data in a three-dimensional environment. Furthermore, I was
+          part of the organisational team of the symposium goINDIGO in May 2022
+          in Vienna. Connected to this symposium I also did a presentation and
+          wrote an article that will be published at the beginning of next
+          year. 
+          <br />
+          With this blog, I hope to improve my writing skills and share my
+          thoughts and experiences on topics that are interesting to me,
+          including archaeological drawings, the use of geographic information
+          systems in archaeology, and the creation of 3D models. I also plan to
+          discuss the role of web development in archaeology and science more
+          generally.
+          <br />I am excited to embark on this journey and share my thoughts and
+          experiences with you. If you want to stay up to date if something new
+          is published on here, then follow me on social media with my Twitter
+          handle @JonaSchlegel. Maybe I will also start a newsletter with whom
+          you will be able to follow my updates. If you have suggestions or
+          feedback, feel free to send me an email with the contact form.
+          <p></p>
+          Anyway, thank you for joining me and stay tuned!
+        </p>
       </>
     ),
   },

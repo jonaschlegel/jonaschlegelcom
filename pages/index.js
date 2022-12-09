@@ -33,7 +33,7 @@ export default () => (
               <h3>Magnetic</h3>
               <p>Different projects focused on the magnetic data collection.</p>
             </header>
-            <Link href="/portfolio/magnetic" className="link primary"></Link>
+            <Link href="/portfolio/magnetics" className="link primary"></Link>
           </article>
           <article style={{ backgroundImage: `url('/images/Radar.jpg')` }}>
             <header className="major">
