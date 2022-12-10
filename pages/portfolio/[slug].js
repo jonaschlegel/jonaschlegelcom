@@ -246,7 +246,7 @@ const portfolioItems = {
           <p className="author">
             Benjamin Wild, Geert J. Verhoeven, Martin Wieser, Camillo Ressl,
             Jona Schlegel, Stefan Wogrin, Johannes Otepka-Schremmer, Norbert
-            feifer
+            Pfeifer
           </p>
           <p>
             <em>Heritage</em> 2022, <em>5</em>(4), 2987-3009
@@ -418,7 +418,7 @@ const portfolioItems = {
           <p className="author">article</p>
           <p className="author">
             Roland Filzwieser, Andrey Aladzhov, Jona Schlegel, Alois
-            Hinterleitner, Nives DOneus, Hannes Schiel, Janko Dimitrov, Martin
+            Hinterleitner, Nives Doneus, Hannes Schiel, Janko Dimitrov, Martin
             Gamon, Falko Daim, Wolfgang Neubauer
           </p>
           <p>Be-JA vol. 9 (2019), 229-261</p>
