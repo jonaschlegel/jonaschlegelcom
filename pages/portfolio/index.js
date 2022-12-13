@@ -15,6 +15,9 @@ export default function Portfolio() {
         <BannerLanding title="Portfolio" />
         <div id="main">
           <section id="one">
+          <Link href="/portfolio/3d-models" className="image">
+                <img src="\public\images\3d_ipad.jpg" alt="" />
+              </Link>
             <div className="inner">
               <header className="major">
                 <Link href="/portfolio/3d-models" className="link primary">
@@ -68,7 +71,7 @@ export default function Portfolio() {
             </section>
             <section>
               <Link href="/portfolio/art" className="image">
-                <img src="/images/pic09.jpg" alt="" />
+                <img src="/images/art.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">
@@ -96,7 +99,7 @@ export default function Portfolio() {
             </section>
             <section>
               <Link href="/portfolio/magnetics" className="image">
-                <img src="/images/pic10.jpg" alt="" />
+                <img src="/images/Magnetic.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">

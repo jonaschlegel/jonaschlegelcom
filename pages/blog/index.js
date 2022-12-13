@@ -16,6 +16,9 @@ export default function Blog() {
 
         <div id="main">
           <section id="one">
+          <Link href="/blog/introduction" className="image">
+                <img src="/images/introduction.jpg" alt="" />
+              </Link>
             <div className="inner">
               <header className="major">
                 <h2>An introduction.</h2>
@@ -39,7 +42,7 @@ export default function Blog() {
           <section id="two" className="spotlights">
             <section>
               <Link href="/blog/modelling" className="image">
-                <img src="/images/pic08.jpg" alt="" />
+                <img src="/images/modelling.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">
@@ -66,7 +69,7 @@ export default function Blog() {
             </section>
             <section>
               <Link href="/blog/drawing" className="image">
-                <img src="/images/pic09.jpg" alt="" />
+                <img src="/images/drawing.jpeg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">
@@ -91,7 +94,7 @@ export default function Blog() {
             </section>
             <section>
               <Link href="/generic" className="image">
-                <img src="/images/pic10.jpg" alt="" />
+                <img src="/images/SecondExcavation.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">
