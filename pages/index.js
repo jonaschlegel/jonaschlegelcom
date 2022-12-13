@@ -56,7 +56,7 @@ export default () => (
             </header>
             <Link href="/portfolio/writing" className="link primary"></Link>
           </article>
-          <article style={{ backgroundImage: `url('/images/writing.jpg')` }}>
+          <article style={{ backgroundImage: `url('/images/3d_ipad.jpg')` }}>
             <header className="major">
               <h3>3D Models</h3>
               <p>Different models from all around the world.</p>

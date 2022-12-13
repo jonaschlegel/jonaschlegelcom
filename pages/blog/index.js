@@ -15,13 +15,14 @@ export default function Blog() {
         <BannerLanding title="Blog" />
 
         <div id="main">
-          <section id="one">
+          <section>
           <Link href="/blog/introduction" className="image">
                 <img src="/images/introduction.jpg" alt="" />
               </Link>
+              <div className="content">
             <div className="inner">
               <header className="major">
-                <h2>An introduction.</h2>
+                <h3>An introduction.</h3>
               </header>
               <p className="author">by Jona Schlegel on 08.12.2022</p>
               <p>
@@ -37,6 +38,7 @@ export default function Blog() {
                   </Link>
                 </li>
               </ul>
+            </div>
             </div>
           </section>
           <section id="two" className="spotlights">
@@ -69,7 +71,7 @@ export default function Blog() {
             </section>
             <section>
               <Link href="/blog/drawing" className="image">
-                <img src="/images/drawing.jpeg" alt="" />
+                <img src="/images/drawing.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">

@@ -10,18 +10,17 @@ export default function Portfolio() {
         <title>Landing Page</title>
         <meta name="description" content="Landing Page of the Portfolio" />
       </Head>
-
       <div>
         <BannerLanding title="Portfolio" />
-        <div id="main">
-          <section id="one">
+        <div id>
+          <section>
           <Link href="/portfolio/3d-models" className="image">
-                <img src="\public\images\3d_ipad.jpg" alt="" />
+                <img src="\public\images\3d_ipad.jpeg" alt="" />
               </Link>
-            <div className="inner">
+            <div className="content">
               <header className="major">
                 <Link href="/portfolio/3d-models" className="link primary">
-                  <h2>3D models</h2>
+                  <h3>3D models</h3>
                 </Link>
               </header>
               <p>
