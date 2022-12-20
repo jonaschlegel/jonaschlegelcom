@@ -67,7 +67,7 @@ export default function Blog() {
             </section>
             <section>
               <Link href="/blog/drawing" className="image">
-                <img src="/images/drawing.jpeg" alt="" />
+                <img src="/images/drawing.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">
