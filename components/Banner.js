@@ -17,7 +17,7 @@ const Banner = (props) => (
         </p>
         <ul className="actions">
           <li>
-            <a href="#one" className="button next scrolly">
+            <a href="/portfolio" className="button next scrolly">
               Go to my Portfolio
             </a>
           </li>
