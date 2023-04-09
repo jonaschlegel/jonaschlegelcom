@@ -744,9 +744,6 @@ export default function PortfolioItem() {
             <header className="major">
               <h1>{portfolioItems[router.query.slug].title}</h1>
             </header>
-            <span className="image main">
-              <img src="/images/pic11.jpg" alt="" />
-            </span>
             {portfolioItems[router.query.slug].content}
           </div>
         </section>
