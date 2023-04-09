@@ -253,9 +253,6 @@ export default function BlogItem() {
             <header className="major">
               <h1>{blogItems[router.query.slug].title}</h1>
             </header>
-            <span className="image main">
-              <img src="/images/pic11.jpg" alt="" />
-            </span>
             {blogItems[router.query.slug].content}
           </div>
         </section>
