@@ -12,14 +12,17 @@ export default function Portfolio() {
       </Head>
       <div>
         <BannerLanding title="Portfolio" />
-        <div id>
+        <div id="main">
+
+        <section id="two" className="spotlights">
           <section>
           <Link href="/portfolio/3d-models" className="image">
-                <img src="\public\images\3d_ipad.jpeg" alt="" />
+                <img src="/images/3d_ipad.jpg" alt="" />
               </Link>
             <div className="content">
+              <div className="inner">
               <header className="major">
-                <Link href="/portfolio/3d-models" className="link primary">
+                <Link href="/portfolio/3d-models" >
                   <h3>3D models</h3>
                 </Link>
               </header>
@@ -35,12 +38,12 @@ export default function Portfolio() {
                   </Link>
                 </li>
               </ul>
+              </div>
             </div>
           </section>
-          <section id="two" className="spotlights">
             <section>
               <Link href="/portfolio/writing" className="image">
-                <img src="\public\images\writing.jpg" alt="" />
+                <img src="/images/writing.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">
