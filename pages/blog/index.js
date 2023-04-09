@@ -12,7 +12,6 @@ export default function Blog() {
       </Head>
 
       <div>
-        <div>
           <BannerLanding title="Blog" />
           <div id="main">
             <section id="one">
@@ -119,7 +118,6 @@ export default function Blog() {
             </section>
           </div>
         </div>
-      </div>
     </Layout>
   );
 }
