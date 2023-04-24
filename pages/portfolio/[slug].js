@@ -1,5 +1,7 @@
+import 'lightgallery/css/lightgallery.css';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
+import ArtGallery from '../../components/ArtGallery';
 import Layout from '../../components/Layout';
 
 const portfolioItems = {
@@ -723,6 +725,7 @@ const portfolioItems = {
           archaeologists to connect with others who share their interests, and
           to engage the public in the study of the past.
         </p>
+        <ArtGallery />
       </>
     ),
   },
