@@ -1,27 +1,27 @@
+import { useEffect, useState } from 'react';
 import 'lightgallery/css/lightgallery.css';
 import lightGallery from 'lightgallery';
-import { useEffect } from 'react';
 
 function ArtGallery() {
+  const [images, setImages] = useState([]);
+
   useEffect(() => {
-    async function fetchImages() {
-      const response = await fetch('/api/art-gallery-images');
-      const data = await response.json();
+    // List of image names in the directory
+    const imageNames = Array.from({ length: 10 }, (_, i) => `image${i + 1}.jpg`);
 
-      const gallery = document.getElementById('my-gallery');
-      data.images.forEach((src) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.setAttribute('data-src', src);
-        img.setAttribute('data-sub-html', '');
-        gallery.appendChild(img);
-      });
+    setImages(imageNames.map(name => `/images/artGallery/${name}`));
 
-      lightGallery(gallery);
-    }
+    const gallery = document.getElementById('my-gallery');
+    images.forEach((src) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.setAttribute('data-src', src);
+      img.setAttribute('data-sub-html', '');
+      gallery.appendChild(img);
+    });
 
-    fetchImages();
-  }, []);
+    lightGallery(gallery);
+  }, [images]);
 
   return (
     <div id="my-gallery" style={{ display: 'none' }}>
