@@ -1,6 +1,5 @@
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
-import ArtGallery from '../../components/ArtGallery';
 import Layout from '../../components/Layout';
 
 const blogItems = {
