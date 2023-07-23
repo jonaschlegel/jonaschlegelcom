@@ -6,6 +6,7 @@ const Footer = (props) => (
           <a
             href="https://twitter.com/jonaschlegel"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon"
           >
             <span className="label">Twitter</span>
@@ -16,6 +17,7 @@ const Footer = (props) => (
           <a
             href="https://www.instagram.com/jona.schlegel/"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon"
           >
             <span className="label">Instagram</span>
@@ -26,6 +28,7 @@ const Footer = (props) => (
           <a
             href="https://github.com/jonaschlegel"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon"
           >
             <span className="label">GitHub</span>
@@ -36,6 +39,7 @@ const Footer = (props) => (
           <a
             href="https://www.linkedin.com/in/jona-schlegel-942879153/"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon"
           >
             <span className="label">LinkedIn</span>
@@ -46,6 +50,7 @@ const Footer = (props) => (
           <a
             href="https://orcid.org/0000-0002-4190-9566"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon"
           >
             <span className="label">OrcID</span>
@@ -56,6 +61,7 @@ const Footer = (props) => (
           <a
             href="https://www.researchgate.net/profile/Jona-Schlegel"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon"
           >
             <span className="label">ResearchGate</span>
