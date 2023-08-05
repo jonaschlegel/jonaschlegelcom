@@ -1,0 +1,75 @@
+.leaflet-container {
+  height: 500px;
+  width: 100%;
+  display: block;
+  z-index: 1000;
+}
+
+.leaflet-container a {
+  color: #0078a8;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: #fff;
+  box-shadow: 0 0 5px #bbb;
+  margin: 10px;
+}
+
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-attribution a {
+  color: #333;
+}
+
+.leaflet-container .leaflet-control-attribution a:hover {
+  color: #000;
+}
+
+.leaflet-container .leaflet-marker-icon,
+.leaflet-container .leaflet-marker-shadow,
+.leaflet-container .leaflet-tile-pane,
+.leaflet-container .leaflet-pane > svg,
+.leaflet-container .leaflet-pane > canvas,
+.leaflet-container .leaflet-zoom-box,
+.leaflet-container .leaflet-image-layer,
+.leaflet-container .leaflet-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.leaflet-container .leaflet-overlay-pane svg,
+.leaflet-container .leaflet-marker-pane svg,
+.leaflet-container .leaflet-shadow-pane svg,
+.leaflet-container .leaflet-tooltip-pane svg,
+.leaflet-container .leaflet-popup-pane svg {
+  pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+}
+
+.leaflet-container .leaflet-marker-icon,
+.leaflet-container .leaflet-marker-shadow {
+  display: block;
+}
+
+/* Tile layers */
+.leaflet-container .leaflet-tile {
+  filter: inherit;
+  visibility: hidden;
+}
+
+.leaflet-container .leaflet-tile-loaded {
+  visibility: inherit;
+}
+
+.leaflet-container .leaflet-zoom-box {
+  width: 0;
+  height: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 800;
+}
+
+/* Default theme */
+.leaflet-container {
+  background: #ddd;
+  outline: 0;
+}
