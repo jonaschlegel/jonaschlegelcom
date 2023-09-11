@@ -1,31 +1,50 @@
-# nextjs-starter-forty
-A Next.js starter based on the Forty site template, designed by HTML5 UP. Check out https://codebushi.com/nextjs-website-starters/ for more Next.js starters and templates.
+### TL;DR
 
-## Preview
+The GitHub repository for `jonaschlegelcom` serves as the codebase for a personal website. It utilises NextJS 13 as its core framework and is configured with TypeScript. Styling is managed through TailwindCSS and SCSS. The repository contains essential configuration files such as `package.json`, `package-lock.json`, `prettier.config.js`, and `next.config.js`. Additionally, a `pnpm-lock.yaml` file indicates the use of pnpm as a package manager. The repository currently lacks a comprehensive `README.md` file.
 
-http://nextjs-forty.surge.sh/
+# Jonas Schlegel Personal Website
 
-## Getting Started
+## Introduction
 
-To get started, simply clone the repository and run `npm install`
+This repository contains the source code for Jonas Schlegel's personal website. Developed using NextJS 13 and TypeScript, the project aims to provide an interactive and visually appealing online presence. TailwindCSS and SCSS are employed for styling, ensuring a responsive and modern design.
 
+## Prerequisites
+
+- Node.js (v14 or above)
+- pnpm package manager
+
+## Installation
+
+To clone and run this project, execute the following commands:
+
+```bash
+git clone https://github.com/jonaschlegel/jonaschlegelcom.git
+cd jonaschlegelcom
+pnpm install
 ```
-# Clone the repo
-git clone https://github.com/codebushi/nextjs-starter-forty.git
 
-# Move into the new directory
-cd nextjs-starter-forty/
+## Usage
 
-# Install npm packages
-npm install
+Start the development server:
 
-# Start up the next.js dev server, browse to http://localhost:3000/
-npm run dev
+```bash
+pnpm dev
 ```
 
-## Generating the Static Site
+Navigate to `http://localhost:3000/` to view the website.
 
-```
-# Build and export the site, the static files are generated in the out/ folder
-npm run export
-```
+## Configuration Files
+
+- `package.json`: Manages project dependencies and scripts.
+- `package-lock.json`: Locks down the versions of installed packages.
+- `prettier.config.js`: Configures code formatting rules.
+- `next.config.js`: Customises the NextJS configuration.
+- `pnpm-lock.yaml`: Manages locked versions of dependencies when using pnpm.
+
+## Contributing
+
+Contributions are welcome. Please fork the repository and create a pull request for any features, enhancements, or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
