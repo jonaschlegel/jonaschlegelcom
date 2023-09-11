@@ -3,6 +3,41 @@ import Head from 'next/head';
 import Layout from '../../components/Layout';
 
 const blogItems = {
+  archInk: {
+    id: 4,
+    title: '#archInk: A Journey Through Ink and Archaeology',
+    shortdescription: 'This post explores the intersection of ink drawing and archaeology through the #archInk initiative.',
+    content: (
+      <>
+        <p>
+        In archaeology, the combination of art and science opens up exciting avenues for exploration. One standout example is #archInk, an initiative that fuses archaeological topics with the craft of (ink) drawing. This creative venture takes its cue from Inktober, a worldwide art challenge started in 2009 by Jake Parker. Originally aimed at honing his own drawing skills, Inktober has since inspired artists globally to create ink drawings all October long (Parker 2023). Just as "Inktober" melds "ink" with "October," #archInk cleverly combines "archaeology" and "ink" into a single, evocative term. 
+        </p>
+        <br/>
+        <h3>The Origins of #archInk</h3>
+        <p>
+        Dr. Katherine Cook, an archaeologist at the University of Montreal, Canada, kicked off #archInk in 2018. She designed it as a fun and educational way to spark creativity and fresh thinking in archaeology and anthropology students. Cook (2018) outlines the foundational principles of #archInk in her blog post, highlighting how it boosts creative communication and sharpens critical thinking skills. 
+        </p>
+        <h3>My Personal Experience with #archInk</h3>
+        <p>
+          Jumping into #archInk is like stepping into a new world. Back in October 2020, I dove in for the first time, keen on sharpening my skills in analogue pen ink drawings. Every now and then, I'd mix in some watercolour for a splash of vibrancy. The 2020 prompt list and the work of fellow participants pushed me to think outside the box. They challenged me to bring each #archInk theme to life in my own unique way, sparking a deeper interest in the intersection of art and archaeology. Fast forward to 2021, and an iPad entered the scene. This shift to digital art opened up a whole new playground for me. My digital drawings from October 2021, mostly in striking black lines, offered a fresh perspective and helped me level up my digital art game. Now, with October 2023 just around the bend, I'm all geared up to dive back into the #archInk experience. 
+        </p>
+        <h3>#archInk and SciCom</h3>
+        <p>
+        Art's role in scientific communication, or SciCom, is getting the spotlight it deserves. Take the study by Gonzalez et al. (2021), for example. They talked to artists in a travelling science museum and found that art does more than just look pretty. It sparks dialogue, challenges the way we think, and even changes how we feel about knowledge. The study shows that these travelling art projects can make science accessible to everyone, no matter where they are. Curtis et al. (2012) make a similar point. They say that adding a splash of art to scientific events can make the whole experience more engaging. It gets people thinking about new ways to talk about science, which is always a good thing. So, what does this mean for #archInk? Well, it turns this art challenge into a powerhouse for talking about archaeology. When you draw something for #archInk, you're not just making art; you're exploring the world of archaeology in a whole new way. And thanks to hashtags like #archInk on X (former Twitter) and Instagram, everyone can share their creations and learn from each other. But #archInk isn't just for October. If you're itching to get your hands dirty with some ink and archaeology, why wait? You can join #inktober52, which runs all year and gives you a new theme every week (Parker 2023). So, you can keep those creative juices flowing and maybe even come up with your own archaeological themes to explore. To see what I'm up to, give me a follow at @archaeoINK on Instagram. I'll be sharing my own blend of art and archaeology, and I can't wait to see what you'll bring to the table. So, also share your works starting on the first of October 2023 with the hashtag #archInk 
+        </p>
+        <h3>References</h3>
+        <p>
+        Curtis, D., Reid, N., & Ballard, G. (2012). Communicating ecology through art: what scientists think. Ecology and Society, 17(2). 
+        <br/>
+        Gonzalez, A., Bevilaqua, D., & Soares, M. (2021). Communicating science is an art! what do artists who work in an itinerant science museum say?. Actio Docência Em Ciências, 6(2), 1.
+        <br/>
+        Cook, K. 2018. Teaching & Learning Creative Habits: The Evolution of #archInk. UTP Teaching Culture Blog. Available at: http://www.utpteachingculture.com/teaching-learning-creative-habits-the-evolution-of-archink/ [Accessed 11 September 2023]. 
+        <br/>
+        Parker, J. 2023 Inktober. Available at: https://inktober.com [Accessed 11 September 2023].
+        </p>
+      </>
+    ),
+  },
   introduction: {
     id: 1,
     title: 'Introduction',
@@ -40,7 +75,7 @@ const blogItems = {
           data in geographic information systems (GIS). Additionally I was also
           taught to collect data with the RIEGL VZ400 and RIEGL VZ400i, which
           are terrestrial laser scanner (TLS) and how to process them with
-          RiProcess. 
+          RiProcess.
           <p></p>
           In addition to my work at the Ludwig Boltzmann Institute, I am also
           pursuing my PhD at the University of Vienna. My research focuses on
@@ -57,7 +92,7 @@ const blogItems = {
           part of the organisational team of the symposium goINDIGO in May 2022
           in Vienna. Connected to this symposium I also did a presentation and
           wrote an article that will be published at the beginning of next
-          year. 
+          year.
           <br />
           With this blog, I hope to improve my writing skills and share my
           thoughts and experiences on topics that are interesting to me,

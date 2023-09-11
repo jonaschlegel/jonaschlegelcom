@@ -15,6 +15,29 @@ export default function Blog() {
         <BannerLanding title="Blog" />
         <div id="main">
         <section id="two" className="spotlights">
+        <section>
+  <Link href="/blog/archInk" className="image">
+    <img src="/images/archInk.jpg" alt="" />
+  </Link>
+  <div className="content">
+    <div className="inner">
+      <header className="major">
+        <h3>#archInk: A Journey Through Ink and Archaeology</h3>
+      </header>
+      <p className="author">by Jona Schlegel on 11.09.2023</p>
+      <p>
+        This post explores archInk, inktober and science communication in the scope of archaeology.
+      </p>
+      <ul className="actions">
+        <li>
+          <Link href="/blog/archInk" className="button">
+            Blog post here
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
           <section>
             <Link href="/blog/introduction" className="image">
               <img src="/images/introduction.jpg" alt="" />
@@ -41,8 +64,8 @@ export default function Blog() {
               </div>
             </div>
           </section>
-
-            <section>
+      
+           {/*  <section>
               <Link href="/blog/modelling" className="image">
                 <img src="/images/modelling.jpg" alt="" />
               </Link>
@@ -68,7 +91,7 @@ export default function Blog() {
                   </ul>
                 </div>
               </div>
-            </section>
+            </section> */}
             <section>
               <Link href="/blog/drawing" className="image">
                 <img src="/images/drawing.jpg" alt="" />
@@ -117,6 +140,7 @@ export default function Blog() {
                 </div>
               </div>
             </section>
+            
           </section>
         </div>
       </div>
