@@ -3,8 +3,7 @@ import Head from 'next/head';
 import Layout from '../../components/Layout';
 import Image from 'next/image';
 
-
-const blogItems = {
+export const blogItems = {
   archInk: {
     id: 4,
     title: '#archInk: A Journey Through Ink and Archaeology',
@@ -12,8 +11,10 @@ const blogItems = {
     date: '11.09.2023',
     shortdescription: 'This post explores the intersection of ink drawing and archaeology through the #archInk initiative.',
     image: '/images/archInk.jpg',
+    keywords: ['archaeology', 'ink', 'archaeoINK', 'archInk', 'Inktober', 'SciCom'],
     content: (
       <>
+      <p className="author center">by Jona Schlegel on the 11.09.2023</p>
         <p>
         In archaeology, the combination of art and science opens up exciting avenues for exploration. One standout example is #archInk, an initiative that fuses archaeological topics with the craft of (ink) drawing. This creative venture takes its cue from Inktober, a worldwide art challenge started in 2009 by Jake Parker. Originally aimed at honing his own drawing skills, Inktober has since inspired artists globally to create ink drawings all October long (Parker 2023). Just as "Inktober" melds "ink" with "October," #archInk cleverly combines "archaeology" and "ink" into a single, evocative term. 
         </p>
@@ -59,8 +60,10 @@ const blogItems = {
     shortdescription:
       'This blog post will focus on what the purpose is of this blog, and what kind of topics I want to cover and how regularly I will try to upload a post.',
     image: '/images/introduction.jpg',
+    keywords: ['introduction', 'Jona Schlegel', 'archaeoINK', 'LBI ArchPro', 'work', 'experience'],
       content: (
       <>
+      <p className="author center">by Jona Schlegel on the 08.12.2022</p>
         <p>
           Welcome to my blog! <br />
           My name is Jona Schlegel and I am a female archaeologist working at
@@ -135,8 +138,10 @@ const blogItems = {
     shortdescription:
       'In this blog post I will explore how I create 3D models with image-based modelling and tools like a mirrorless camera or my phone to get the data that will create me a 3D model with Metashape.',
       image: '/images/modelling.jpg',
+      keywords: [],
       content: (
       <>
+      <p className="author center">by Jona Schlegel on the dd.mm.yyyy</p>
         <p></p>
       </>
     ),
@@ -146,7 +151,7 @@ const blogItems = {
     title: 'Why I draw archaeological related doodles',
     shortdescription: 'In this post I will explore, ',
     image: '/images/drawing.jpg',
-    keywords: 'drawing',
+    keywords: ['drawing', 'art', 'archeoINK', 'illustrations', 'sketch', 'doodle', 'archaeology'],
     content: (
       <>
         <p className="author center">by Jona Schlegel on the 08.12.2022</p>
@@ -290,35 +295,40 @@ const blogItems = {
   },
 };
 
-
 export default function BlogItem() {
   const router = useRouter();
-  if (!router.query.slug) return <div>loading...</div>;
+  const { slug } = router.query; // Destructure slug from query
+
+  // Check for undefined slug
+  if (typeof slug === 'undefined') return <div>Loading...</div>;
+
+  const blogData = blogItems[slug]; // Assuming blogItems is available
+
   return (
     <Layout>
       <Head>
-        <title>{blogItems[router.query.slug].title}</title>
+        <title>{blogData ? blogData.title : 'Loading...'}</title>
         <meta name="description" content="Blog Page" />
       </Head>
-
       <div id="main" className="alt">
         <section id="one">
           <div className="inner">
             <header className="major">
-            
-  <div style={{ justifyContent: 'center', alignItems: 'center', maxWidth: '80%', overflow: 'hidden' }}>
-    <Image 
-      src={blogItems[router.query.slug].image} 
-      alt={blogItems[router.query.slug].title} 
-      width={500} 
-      height={300} 
-      layout="responsive"
-    />
-  </div>
-
-              <h1>{blogItems[router.query.slug].title}</h1>
+              <div style={{ justifyContent: 'center', alignItems: 'center', maxWidth: '100%', overflow: 'hidden' }}>
+                {blogData && (
+                  <Image 
+                    src={blogData.image} 
+                    alt={blogData.title} 
+                    width={500} 
+                    height={300} 
+                  />
+                )}
+              </div>
+              {blogData && (
+                <h1>{blogData.title}</h1>
+              )}
             </header>
-            {blogItems[router.query.slug].content}
+            {blogData ? blogData.content : 'Loading...'}
           </div>
         </section>
       </div>

@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import BannerLanding from '../../components/BannerLanding';
 import Layout from '../../components/Layout';
+import BlogSearch from '../../components/BlogSearch';
+import { blogItems } from './[slug]';
 
 export default function Blog() {
   return (
@@ -10,15 +12,18 @@ export default function Blog() {
         <title>Blog</title>
         <meta name="description" content="Landing Page Blog" />
       </Head>
-
+      
       <div>
         <BannerLanding title="Blog" />
+        <BlogSearch blogItems={blogItems} />
+
         <div id="main">
         <section id="two" className="spotlights">
         <section>
   <Link href="/blog/archInk" className="image">
     <img src="/images/archInk.jpg" alt="" />
   </Link>
+
   <div className="content">
     <div className="inner">
       <header className="major">
