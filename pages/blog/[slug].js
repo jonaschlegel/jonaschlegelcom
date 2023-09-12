@@ -1,12 +1,17 @@
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import Image from 'next/image';
+
 
 const blogItems = {
   archInk: {
     id: 4,
     title: '#archInk: A Journey Through Ink and Archaeology',
+    author: 'Jona Schlegel',
+    date: '11.09.2023',
     shortdescription: 'This post explores the intersection of ink drawing and archaeology through the #archInk initiative.',
+    image: '/images/archInk.jpg',
     content: (
       <>
         <p>
@@ -17,10 +22,20 @@ const blogItems = {
         <p>
         Dr. Katherine Cook, an archaeologist at the University of Montreal, Canada, kicked off #archInk in 2018. She designed it as a fun and educational way to spark creativity and fresh thinking in archaeology and anthropology students. Cook (2018) outlines the foundational principles of #archInk in her blog post, highlighting how it boosts creative communication and sharpens critical thinking skills. 
         </p>
+        <img 
+  src="/images/blogPosts/archInkPrompts.jpg" 
+  alt="archink prompt lists through the years" 
+  style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+/>
         <h3>My Personal Experience with #archInk</h3>
         <p>
           Jumping into #archInk is like stepping into a new world. Back in October 2020, I dove in for the first time, keen on sharpening my skills in analogue pen ink drawings. Every now and then, I'd mix in some watercolour for a splash of vibrancy. The 2020 prompt list and the work of fellow participants pushed me to think outside the box. They challenged me to bring each #archInk theme to life in my own unique way, sparking a deeper interest in the intersection of art and archaeology. Fast forward to 2021, and an iPad entered the scene. This shift to digital art opened up a whole new playground for me. My digital drawings from October 2021, mostly in striking black lines, offered a fresh perspective and helped me level up my digital art game. Now, with October 2023 just around the bend, I'm all geared up to dive back into the #archInk experience. 
         </p>
+        <img 
+  src="/images/blogPosts/archInkMyDrawings.jpg" 
+  alt="archink prompt lists through the years" 
+  style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+/>
         <h3>#archInk and SciCom</h3>
         <p>
         Art's role in scientific communication, or SciCom, is getting the spotlight it deserves. Take the study by Gonzalez et al. (2021), for example. They talked to artists in a travelling science museum and found that art does more than just look pretty. It sparks dialogue, challenges the way we think, and even changes how we feel about knowledge. The study shows that these travelling art projects can make science accessible to everyone, no matter where they are. Curtis et al. (2012) make a similar point. They say that adding a splash of art to scientific events can make the whole experience more engaging. It gets people thinking about new ways to talk about science, which is always a good thing. So, what does this mean for #archInk? Well, it turns this art challenge into a powerhouse for talking about archaeology. When you draw something for #archInk, you're not just making art; you're exploring the world of archaeology in a whole new way. And thanks to hashtags like #archInk on X (former Twitter) and Instagram, everyone can share their creations and learn from each other. But #archInk isn't just for October. If you're itching to get your hands dirty with some ink and archaeology, why wait? You can join #inktober52, which runs all year and gives you a new theme every week (Parker 2023). So, you can keep those creative juices flowing and maybe even come up with your own archaeological themes to explore. To see what I'm up to, give me a follow at @archaeoINK on Instagram. I'll be sharing my own blend of art and archaeology, and I can't wait to see what you'll bring to the table. So, also share your works starting on the first of October 2023 with the hashtag #archInk 
@@ -43,7 +58,8 @@ const blogItems = {
     title: 'Introduction',
     shortdescription:
       'This blog post will focus on what the purpose is of this blog, and what kind of topics I want to cover and how regularly I will try to upload a post.',
-    content: (
+    image: '/images/introduction.jpg',
+      content: (
       <>
         <p>
           Welcome to my blog! <br />
@@ -118,7 +134,8 @@ const blogItems = {
     title: 'How to create a 3D model',
     shortdescription:
       'In this blog post I will explore how I create 3D models with image-based modelling and tools like a mirrorless camera or my phone to get the data that will create me a 3D model with Metashape.',
-    content: (
+      image: '/images/modelling.jpg',
+      content: (
       <>
         <p></p>
       </>
@@ -128,6 +145,7 @@ const blogItems = {
     id: 3,
     title: 'Why I draw archaeological related doodles',
     shortdescription: 'In this post I will explore, ',
+    image: '/images/drawing.jpg',
     keywords: 'drawing',
     content: (
       <>
@@ -272,6 +290,7 @@ const blogItems = {
   },
 };
 
+
 export default function BlogItem() {
   const router = useRouter();
   if (!router.query.slug) return <div>loading...</div>;
@@ -286,6 +305,17 @@ export default function BlogItem() {
         <section id="one">
           <div className="inner">
             <header className="major">
+            
+  <div style={{ justifyContent: 'center', alignItems: 'center', maxWidth: '80%', overflow: 'hidden' }}>
+    <Image 
+      src={blogItems[router.query.slug].image} 
+      alt={blogItems[router.query.slug].title} 
+      width={500} 
+      height={300} 
+      layout="responsive"
+    />
+  </div>
+
               <h1>{blogItems[router.query.slug].title}</h1>
             </header>
             {blogItems[router.query.slug].content}
