@@ -2,6 +2,39 @@ const Footer = (props) => (
   <footer id="footer">
     <div className="inner">
       <ul className="icons">
+      <li>
+          <a
+            href="https://ko-fi.com/archaeoink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <span className="label">Ko-Fi</span>
+            <i className="fab fa-commenting-o fa-2x"></i>
+          </a>
+        </li>
+      <li>
+          <a
+            href="https://www.redbubble.com/people/archaeoink/shop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <span className="label">Redbubble</span>
+            <i className="fa fa-shopping-cart fa-2x"></i>
+          </a>
+        </li>
+      <li>
+          <a
+            href="https://www.etsy.com/at/shop/ArchaeoinkDrawings"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <span className="label">Etsy</span>
+            <i className="fab fa-etsy fa-2x"></i>
+          </a>
+        </li>
         <li>
           <a
             href="https://twitter.com/jonaschlegel"

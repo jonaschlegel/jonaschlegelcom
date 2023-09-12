@@ -21,7 +21,7 @@ const Contact = (props) => (
                     </ul>
                 </form>
             </section>
-            <section className="split">
+            {/* <section className="split">
                 <section>
                     <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
@@ -45,7 +45,7 @@ const Contact = (props) => (
                         United States of America</span>
                     </div>
                 </section>
-            </section>
+            </section> */}
         </div>
     </section>
 )

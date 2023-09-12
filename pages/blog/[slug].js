@@ -297,12 +297,9 @@ export const blogItems = {
 
 export default function BlogItem() {
   const router = useRouter();
-  const { slug } = router.query; // Destructure slug from query
+  const { slug } = router.query; 
 
-  // Check for undefined slug
-  if (typeof slug === 'undefined') return <div>Loading...</div>;
-
-  const blogData = blogItems[slug]; // Assuming blogItems is available
+  const blogData = blogItems[slug]; 
 
   return (
     <Layout>
