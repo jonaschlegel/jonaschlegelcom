@@ -19,11 +19,38 @@ export default function Blog() {
 
         <div id="main">
         <section id="two" className="spotlights">
+    <section>
+  <Link href="/blog/scienceVsScientificCom">
+    <a className="image">
+      <img src="/images/scienceVsScientificCom.jpg" alt="" />
+    </a>
+  </Link>
+
+  <div className="content">
+    <div className="inner">
+      <header className="major">
+        <h3>Science Communication vs Scientific Communication: An Archaeological Perspective</h3>
+      </header>
+      <p className="author">by Jona Schlegel on 18.09.2023</p>
+      <p>
+        This post delves into the differences between science communication and scientific communication, particularly in the field of archaeology.
+      </p>
+      <ul className="actions">
+        <li>
+          <Link href="/blog/scienceVsScientificCom">
+            <a className="button">
+              Blog post here
+            </a>
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
         <section>
   <Link href="/blog/archInk" className="image">
     <img src="/images/archInk.jpg" alt="" />
   </Link>
-
   <div className="content">
     <div className="inner">
       <header className="major">
