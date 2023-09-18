@@ -4,6 +4,47 @@ import Layout from '../../components/Layout';
 import Image from 'next/image';
 
 export const blogItems = {
+  scienceVsScientificCom: {
+    id: 5,
+    title: 'Science Communication vs Scientific Communication: An Archaeological Perspective',
+    author: 'Jona Schlegel',
+    date: '18.09.2023',
+    shortdescription: 'This post delves into the differences between science communication and scientific communication, particularly in the field of archaeology.',
+    image: '/images/scienceVsScientificCom.jpg',
+    keywords: ['archaeology', 'science communication', 'scientific communication', 'SciCom'],
+    content: (
+      <>
+        <p className="author center">by Jona Schlegel on the 18.09.2023</p>
+        <p>
+          Ever wondered why some scientific discoveries make headlines, while others only appear in scholarly journals? The key lies in understanding two terms: "science communication" and "scientific communication." This is especially interesting in archaeology, where new findings can either become a public sensation or remain known only to experts.
+        </p>
+        <br/>
+        <h3>Talking Science to the Public</h3>
+        <p>
+          First up is science communication. This is all about making science understandable and exciting for everyone, not just scientists. Think of it as translating "science speak" into everyday language. When archaeologists find a new ancient city, science communication turns that discovery into a story we all want to hear about.
+        </p>
+        <br/>
+        <h3>Scholarly Chats: The Other Side of the Coin</h3>
+        <p>
+          Now, let's flip to the other side: scientific communication. This is where scientists talk to each other in their own language. They share new research, critique each other's work, and collaborate on projects. It's the behind-the-scenes action that happens before a discovery makes it to the news.
+        </p>
+        <br/>
+        <h3>Two Sides of the Same Coin</h3>
+        <p>
+          You might think these two types of communication are worlds apart, but they're more like two sides of the same coin. A well-studied archaeological site can be both a topic for a research paper and the subject of a gripping documentary.
+        </p>
+        <br/>
+        <h3>Why Both Matter</h3>
+        <p>
+          Here's the kicker: these two forms of communication need each other. Good science communication can inspire the next generation of archaeologists. At the same time, solid scientific communication makes sure that the field keeps growing and stays credible.
+        </p>
+        <br/>
+        <p>
+          In wrapping up, it's crucial to know the difference between science and scientific communication, whether you're an aspiring archaeologist or just someone who loves a good science story. How we talk about science is just as important as the science itself.
+        </p>
+      </>
+    ),
+  },
   archInk: {
     id: 4,
     title: '#archInk: A Journey Through Ink and Archaeology',
