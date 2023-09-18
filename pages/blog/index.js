@@ -20,12 +20,9 @@ export default function Blog() {
         <div id="main">
         <section id="two" className="spotlights">
     <section>
-  <Link href="/blog/scienceVsScientificCom">
-    <a className="image">
+  <Link href="/blog/scienceVsScientificCom" className="image">
       <img src="/images/scienceVsScientificCom.jpg" alt="" />
-    </a>
   </Link>
-
   <div className="content">
     <div className="inner">
       <header className="major">
