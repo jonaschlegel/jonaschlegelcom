@@ -29,6 +29,7 @@ export const blogItems = {
           Now, let's flip to the other side: scientific communication. This is where scientists talk to each other in their own language. They share new research, critique each other's work, and collaborate on projects. It's the behind-the-scenes action that happens before a discovery makes it to the news.
         </p>
         <br/>
+        <img scr="public/images/blogPosts/VennDiagramSciComm.jpg" alt="Venn diagram showing the overlap of SciCom and SciComm" style={{ width: '100%', height: 'auto', objectFit: 'cover' }}/>
         <h3>Two Sides of the Same Coin</h3>
         <p>
           You might think these two types of communication are worlds apart, but they're more like two sides of the same coin. A well-studied archaeological site can be both a topic for a research paper and the subject of a gripping documentary.
