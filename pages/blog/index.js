@@ -26,7 +26,7 @@ export default function Blog() {
   <div className="content">
     <div className="inner">
       <header className="major">
-        <h3>Science Communication vs Scientific Communication: An Archaeological Perspective</h3>
+        <h3 className="h3-responsive">Science Communication vs Scientific Communication: An Archaeological Perspective</h3>
       </header>
       <p className="author">by Jona Schlegel on 18.09.2023</p>
       <p>
@@ -51,7 +51,7 @@ export default function Blog() {
   <div className="content">
     <div className="inner">
       <header className="major">
-        <h3>#archInk: A Journey Through Ink and Archaeology</h3>
+        <h3 className="h3-responsive">#archInk: A Journey Through Ink and Archaeology</h3>
       </header>
       <p className="author">by Jona Schlegel on 11.09.2023</p>
       <p>
@@ -74,7 +74,7 @@ export default function Blog() {
             <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>An introduction.</h3>
+                <h3 className="h3-responsive">An introduction.</h3>
               </header>
               <p className="author">by Jona Schlegel on 08.12.2022</p>
               <p>
@@ -101,7 +101,7 @@ export default function Blog() {
               <div className="content">
                 <div className="inner">
                   <header className="major">
-                    <h3>3D modelling</h3>
+                    <h3 className="h3-responsive">3D modelling</h3>
                   </header>
                   <p className="author">by Jona Schlegel on 08.12.2022</p>
                   <p>
@@ -128,7 +128,7 @@ export default function Blog() {
               <div className="content">
                 <div className="inner">
                   <header className="major">
-                    <h3>Drawing</h3>
+                    <h3 className="h3-responsive">Drawing</h3>
                   </header>
                   <p className="author">by Jona Schlegel on 08.12.2022</p>
                   <p>
@@ -153,7 +153,7 @@ export default function Blog() {
               <div className="content">
                 <div className="inner">
                   <header className="major">
-                    <h3>Interested in more?</h3>
+                    <h3 className="h3-responsive">Interested in more?</h3>
                   </header>
                   <p>
                     Do you want to read more and see older blog posts? Then
