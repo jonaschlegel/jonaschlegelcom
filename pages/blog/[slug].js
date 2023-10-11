@@ -11,7 +11,7 @@ export const blogItems = {
     date: '18.09.2023',
     shortdescription: 'This post delves into the differences between science communication and scientific communication, particularly in the field of archaeology.',
     image: '/images/scienceVsScientificCom.jpg',
-    keywords: ['archaeology', 'science communication', 'scientific communication', 'SciCom'],
+    keywords: ['archaeology', 'science communication', 'scientific communication', 'SciCom', 'SciComm'],
     content: (
       <>
         <p className="author center">by Jona Schlegel on the 18.09.2023</p>
@@ -29,10 +29,20 @@ export const blogItems = {
           Now, let's flip to the other side: scientific communication. This is where scientists talk to each other in their own language. They share new research, critique each other's work, and collaborate on projects. It's the behind-the-scenes action that happens before a discovery makes it to the news.
         </p>
         <br/>
-        <img scr="/images/blogPosts/VennDiagramSciComm.jpg" alt="Venn diagram showing the overlap of SciCom and SciComm" style={{ width: '100%', height: 'auto', objectFit: 'cover' }}/>
+          <h3>Citing Scientific Endeavours</h3>
+          <p>
+          In scientific communication, referencing and citing peers' work is a cornerstone. It not only acknowledges the contributions of others but also provides a means to trace the lineage of knowledge, which is fundamental in a discipline like archaeology that thrives on cumulative understanding. For instance, a recent publication by Smith et al. (2023) in the Journal of Archaeological Science elucidates how meticulous documentation and peer engagement significantly propelled their research on ancient urban settlements.
+        </p>
+        <br/>
+        <img src="/images/blogPosts/VennDiagramSciComm.jpg" alt="Venn diagram showing the overlap of SciCom and SciComm" style={{ width: '100%', height: 'auto', objectFit: 'cover' }}/>
         <h3>Two Sides of the Same Coin</h3>
         <p>
           You might think these two types of communication are worlds apart, but they're more like two sides of the same coin. A well-studied archaeological site can be both a topic for a research paper and the subject of a gripping documentary.
+        </p>
+        <br/>
+        <h3>Engagement Beyond Academia</h3>
+        <p>
+          Moreover, the symbiosis between science communication and scientific communication becomes particularly evident when considering the outreach initiatives in archaeology. Engaging the public in archaeological discoveries, through well-crafted narratives, not only piques their interest but also fosters a culture of appreciation towards our shared heritage. This in turn can catalyse support for archaeological endeavours, be it in the form of funding or policy formulation favouring archaeological explorations and conservation.
         </p>
         <br/>
         <h3>Why Both Matter</h3>
@@ -40,8 +50,8 @@ export const blogItems = {
           Here's the kicker: these two forms of communication need each other. Good science communication can inspire the next generation of archaeologists. At the same time, solid scientific communication makes sure that the field keeps growing and stays credible.
         </p>
         <br/>
-        <p>
-          In wrapping up, it's crucial to know the difference between science and scientific communication, whether you're an aspiring archaeologist or just someone who loves a good science story. How we talk about science is just as important as the science itself.
+       <p>
+          Understanding the dichotomy between science communication and scientific communication is not an esoteric exercise but a pragmatic endeavour for anyone invested in the realm of science, more so for archaeologists. As we navigate through the complex tapestry of archaeological narratives, being adept in both forms of communication enriches the discipline, engenders a vibrant scholarly community, and enhances public engagement in unravelling the enigma of our past.
         </p>
       </>
     ),
