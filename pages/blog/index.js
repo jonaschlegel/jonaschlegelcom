@@ -20,6 +20,68 @@ export default function Blog() {
         <div id="main">
           <section id="two" className="spotlights">
             <section>
+              <Link href="/blog/ipadInArchaeology" className="image">
+                <img src="/images/ipadInArchaeology.jpg" alt="" />
+              </Link>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3 className="h3-responsive">
+                      Unearthing Digital Dimensions: The iPad in Archaeological
+                      Toolkits
+                    </h3>
+                  </header>
+                  <p className="author">by Jona Schlegel on 16.10.2023</p>
+                  <p>
+                    This post explores the incorporation of the iPad into
+                    archaeological practices, focusing on personal experiences
+                    and the broader implications for the field.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <Link href="/blog/ipadInArchaeology" className="button">
+                        Blog post here
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section>
+              <Link
+                href="/blog/emergenceOfArchaeoIllustration"
+                className="image"
+              >
+                <img src="/images/emergenceOfArchaeoIllustration.jpg" alt="" />
+              </Link>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3 className="h3-responsive">
+                      Tracing Lines Through Time: The Emergence of
+                      Archaeological Illustration
+                    </h3>
+                  </header>
+                  <p className="author">by Jona Schlegel on 09.10.2023</p>
+                  <p>
+                    This post explores the origins and evolution of
+                    archaeological illustration, charting its journey from early
+                    documentations to a professional field.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <Link
+                        href="/blog/emergenceOfArchaeoIllustration"
+                        className="button"
+                      >
+                        Blog post here
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section>
               <Link href="/blog/scienceVsScientificCom" className="image">
                 <img src="/images/scienceVsScientificCom.jpg" alt="" />
               </Link>
@@ -39,8 +101,11 @@ export default function Blog() {
                   </p>
                   <ul className="actions">
                     <li>
-                      <Link href="/blog/scienceVsScientificCom">
-                        <a className="button">Blog post here</a>
+                      <Link
+                        href="/blog/scienceVsScientificCom"
+                        className="button"
+                      >
+                        Blog post here
                       </Link>
                     </li>
                   </ul>

@@ -4,6 +4,135 @@ import Image from 'next/image';
 import Layout from '../../components/Layout';
 
 export const blogItems = {
+  ipadInArchaeology: {
+    id: 7,
+    title: 'Unearthing Digital Dimensions: The iPad in Archaeological Toolkits',
+    author: 'Jona Schlegel',
+    date: '16.10.2023',
+    shortdescription:
+      'This post explores the incorporation of the iPad into archaeological practices, focusing on personal experiences and the broader implications for the field.',
+    image: '/images/ipadInArchaeology.jpg',
+    keywords: [
+      'iPad',
+      'archaeology',
+      '3D scanning',
+      'LiDAR',
+      'technology integration',
+      'digital documentation',
+    ],
+    content: (
+      <>
+        <p className="author center">by Jona Schlegel on 13.10.2023</p>
+        <p>
+          The iPad, often perceived as a daily-use gadget, has carved a niche
+          within diverse archaeological toolkits. My productive engagement with
+          this device commenced early in 2021, heralding the confluence of
+          modern technology with ancient narratives and archaeological
+          elucidations. The portable and user-friendly nature of iPads, coupled
+          with their robust suite of applications, has facilitated a more
+          dynamic and efficient mode for me in my archaeological practice.
+        </p>
+        <br />
+        <p>
+          Initially, the iPad served as a digital notebook for me, facilitating
+          the recording of insights from scientific articles. The transition
+          from paper to digital notes unfolded smoothly, enhancing the
+          efficiency of information collection and retrieval. This digital
+          companion soon evolved into a medium for crafting archaeological
+          illustrations, visually demystifying complex archaeological concepts.
+          These illustrations metamorphosed into explanatory tools, fostering a
+          better understanding and communication of archaeological themes.
+        </p>
+        <br />
+        <p>
+          The exploration advanced with the discovery of the 3D Scanner App on
+          the iPad Pro 12.9 2020. The device's portability rendered it a
+          constant companion on numerous outings. It was employed to capture 3D
+          models of statues and various objects that piqued interest,
+          documenting their form and intricacies. The ease of creating 3D
+          representations unveiled a fresh perspective on documenting objects
+          that were historically significant and aesthetically captivating.
+        </p>
+        <br />
+        <p>
+          The journey extended to archaeological excavations, where the iPad
+          played a pivotal role in documenting archaeological features and
+          layers swiftly. Utilising the 3D scanner app alleviated the daily
+          documentation workload, making it more efficient. The texture details
+          captured in the 3D models facilitated quicker drafting of the
+          excavation processes, offering a visual aid in understanding the
+          unfolding archaeological narrative.
+        </p>
+        <br />
+        <p>
+          However, the integration of the iPad did not supplant established
+          documentation methods. Terrestrial laser scanning (TLS) and
+          image-based modelling (IBM) remained paramount for documenting each
+          stratigraphic unit comprehensively. The iPad emerged as a tool for
+          capturing interim steps, structuring interpretations and ideas
+          swiftly. Yet, for a final documentation, the tried-and-tested methods
+          like TLS and IBM continued to hold their ground as solid documentation
+          methods.
+        </p>
+        <br />
+        <p>
+          The Light Detection and Ranging (LiDAR) technology in the iPad
+          warrants a mention. Integrated into the device, this technology
+          measures distances using laser light to generate precise 3D models of
+          the surroundings. The initiation of LiDAR in Apple devices began with
+          the release of the iPad Pro in 2020 and the iPhone 12 Pro, rendering
+          3D scanning more accessible. For a detailed understanding of LiDAR
+          technology, readers might find the explanation by Apple insightful (
+          <a
+            href="https://www.apple.com/newsroom/2022/09/ipad-pro-is-revolutionizing-how-archaeologists-preserve-the-history-of-pompeii/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apple, 2022
+          </a>
+          ).
+        </p>
+        <br />
+        <p>
+          Within the broader archaeological landscape, the adoption of modern
+          gadgets like the iPad is positively influencing methodologies. It
+          potentially fosters more collaborative efforts among archaeologists
+          and possibly enhances public engagement with historical sites.
+          However, challenges such as the cost of the device and the
+          line-of-sight requirement of the LiDAR sensor provide a balanced view
+          of this technological integration. This balanced perspective is
+          crucial in understanding the scope and limitations of modern tech in
+          the field of archaeology.
+        </p>
+        <br />
+        <p>
+          The incorporation of the iPad into archaeological practices transcends
+          a mere futuristic allure and represents a pragmatic step forward.
+          However, certain aspects like the costs, accuracy, and the learning
+          curve of handling a new device render the iPad not the first choice of
+          equipment for some. I will continue to utilise my iPad and eagerly
+          anticipate the updates that the device will receive in the future,
+          optimistically contributing to the digitisation of archaeological
+          practices.
+        </p>
+        <br />
+        <h3>References</h3>
+        <p>
+          Apple. 2022. 'iPad Pro is revolutionising how archaeologists preserve
+          the history of Pompeii'. Apple Newsroom. URL:{' '}
+          <a
+            href="https://www.apple.com/newsroom/2022/09/ipad-pro-is-revolutionizing-how-archaeologists-preserve-the-history-of-pompeii/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.apple.com/newsroom/2022/09/ipad-pro-is-revolutionizing-how-archaeologists-preserve-the-history-of-pompeii/
+          </a>{' '}
+          (accessed 13 October 2023).
+        </p>
+      </>
+    ),
+  },
+
   emergenceOfArchaeoIllustration: {
     id: 6,
     title:
@@ -28,73 +157,91 @@ export const blogItems = {
           unveils the narrative of bygone eras, rendering the ancient tangible
           and comprehensible. The curiosity often piques when observing how a
           simple line or a sketch can transport one across the vast expanse of
-          time, breathing life into relics and ruins.
-        </p>
-        <br />
-        <h3>The Dawn of Archaeological Illustration</h3>
-        <p>
-          The nascent stage of archaeological illustration coincides with the
-          inception of archaeology as a scientific discipline. Figures like
-          Heinrich Schliemann, during the historic excavations at Troy, employed
-          artists to document the unearthed treasures meticulously (Smith,
-          1988). Here marks the genesis of a lasting camaraderie between the
-          inked line and the trowel.
-        </p>
-        <br />
-        <h3>Evolution Over Centuries</h3>
-        <p>
-          As time marched on, the scope of archaeological illustration
-          transcended mere documentation to encompass interpretation and
-          reconstruction. The refinement of illustrative techniques, in sync
-          with evolving archaeological methodologies, enriched the visual
-          narrative of archaeological findings.
-        </p>
-        <br />
-        <h3>The Victorian Era: A Significant Epoch</h3>
-        <p>
-          The Victorian era bore witness to a burgeoning fascination with the
-          ancient world. Illustrations from this period not only documented the
-          unearthed past but also fuelled public imagination. The detailed
-          sketches from the Egypt Exploration Fund expeditions, for instance,
-          transported the Egyptian past into the drawing rooms of Victorian
-          England (Drower, 1995).
-        </p>
-        <br />
-        <h3>Technological Advancements</h3>
-        <p>
-          The advent of photography introduced a new dimension to archaeological
-          illustration. Yet, traditional illustrative techniques held their
-          ground, offering interpretative insights that photographs alone could
-          not capture.
-        </p>
-        <br />
-        <h3>The Professionalisation of the Field</h3>
-        <p>
-          The 20th century heralded the establishment of professional bodies and
-          academic courses, sharpening the skills of archaeological
-          illustrators. The rise of organisations like the Institute for
-          Archaeological Illustration and Graphics signalled a notable stride
-          towards professionalisation (Jones, 2002).
-        </p>
-        <br />
-        <h3>Standardisation of Techniques</h3>
-        <p>
-          The era of standardisation ushered in a uniformity in illustrative
-          techniques, enhancing the accuracy and consistency in the visual
-          communication of archaeological findings. This period saw the crafting
-          of guidelines steering the presentation of archaeological
-          illustrations, nurturing a harmonised dialogue between illustrators
-          and archaeologists.
+          time, breathing life into relics and ruins. So, delving into the
+          realms of archaeological illustration is akin to embarking on a vivid
+          journey across time. Every stroke of the illustrator's pen on
+          parchment unfurls tales of bygone eras, making the whispers of ancient
+          civilizations audible to the contemporary soul. The allure that
+          accompanies the fusion of art with the scientific rigor of archaeology
+          is undeniably potent. A curious mind might find itself spellbound by
+          how a mere sketch can serve as a bridge between the present and the
+          epochs long past, rendering the intangible remnants of history into
+          something palpable and comprehensible.
         </p>
         <br />
         <p>
-          A voyage through the annals of archaeological illustration unveils a
-          rich narrative of evolving techniques and paradigms. From rudimentary
-          beginnings, the field has morphed into a critical conduit of
-          archaeological discourse. The modern-day manifestations, as seen
-          through platforms like archaeoINK, echo the enduring significance of
-          visual narratives in unravelling and communicating the intricacies of
-          our shared past.
+          The advent of archaeological illustration is deeply intertwined with
+          the very inception of archaeology as a scientific discipline. The
+          pioneering figures in archaeology, like Heinrich Schliemann with his
+          epoch-making excavations at Troy, envisaged the quintessence of
+          artistry in meticulously documenting the unearthed relics. The hands
+          of artists, wielding their brushes and pens, danced across sheets of
+          paper, capturing the essence of discoveries that were the first
+          whispers from a past long believed to be mute. This epoch heralded the
+          genesis of a lasting camaraderie between the inked line and the
+          trowel, a camaraderie that has weathered the sands of time.
+        </p>
+        <br />
+        <p>
+          As the hands of the clock moved inexorably forward, the realm of
+          archaeological illustration began to burgeon. Its essence evolved from
+          mere documentation to a more nuanced domain of interpretation and
+          reconstruction. The refinement of illustrative techniques, hand in
+          glove with evolving archaeological methodologies, enriched the visual
+          narrative of archaeological findings. It's riveting to observe how the
+          evolving strokes of illustrators paralleled the burgeoning knowledge
+          and methodologies in archaeology.
+        </p>
+        <br />
+        <p>
+          The Victorian era, with its blooming fascination for the ancient
+          world, was a significant epoch in the narrative of archaeological
+          illustration. The sketches of that era did more than just document the
+          past; they were keys that unlocked gates to bygone worlds for the
+          society of the time. Illustrations from the Egypt Exploration Fund
+          expeditions, for instance, transported the mystique of the Egyptian
+          past into the drawing rooms of Victorian England, letting imaginations
+          roam the vast expanses of ancient deserts (Drower, 1995).
+        </p>
+        <br />
+        <p>
+          Technological advancements, particularly the advent of photography,
+          brought forth a new dimension to archaeological illustration. While
+          photography captured the reality in its raw essence, traditional
+          illustrative techniques held their ground staunchly. The
+          interpretative insights that a well-crafted illustration could offer
+          were beyond the reach of photographs.
+        </p>
+        <br />
+        <p>
+          The 20th century ushered in a era of professionalisation in the
+          domain. Establishment of professional bodies and academic courses
+          honed the skills of archaeological illustrators. The rise of
+          organisations like the Institute for Archaeological Illustration and
+          Graphics was a notable stride towards moulding archaeological
+          illustration into a recognised professional field (Jones, 2002).
+        </p>
+        <br />
+        <p>
+          Furthermore, the era of standardisation brought about uniformity in
+          illustrative techniques, enhancing the accuracy and consistency in the
+          visual communication of archaeological findings. The crafting of
+          guidelines steered the presentation of archaeological illustrations,
+          nurturing a harmonised dialogue between illustrators and
+          archaeologists.
+        </p>
+        <br />
+        <p>
+          Embarking on a voyage through the annals of archaeological
+          illustration unveils a narrative rich with evolving techniques and
+          paradigms. From its rudimentary beginnings, the field has morphed into
+          a critical conduit of archaeological discourse. The modern-day
+          manifestations, like through platforms such as archaeoINK, echo the
+          enduring significance of visual narratives in unravelling and
+          communicating the intricacies of our shared past. Venturing into this
+          domain, I too aim to explore the boundaries of what it means to be an
+          illustrator in archaeology, hoping to contribute my strokes to the
+          grand narrative that links us to our roots.
         </p>
         <br />
         <h3>References</h3>
