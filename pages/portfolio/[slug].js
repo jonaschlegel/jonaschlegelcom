@@ -474,7 +474,9 @@ const portfolioItems = {
           the past, and provide a wealth of information about the cultures,
           societies, and histories of ancient people.
         </p>
-        <div><ProjectMap/></div>
+        <div>
+          <ProjectMap />
+        </div>
       </>
     ),
   },

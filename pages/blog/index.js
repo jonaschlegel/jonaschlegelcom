@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import BannerLanding from '../../components/BannerLanding';
-import Layout from '../../components/Layout';
 import BlogSearch from '../../components/BlogSearch';
+import Layout from '../../components/Layout';
 import { blogItems } from './[slug]';
 
 export default function Blog() {
@@ -12,89 +12,96 @@ export default function Blog() {
         <title>Blog</title>
         <meta name="description" content="Landing Page Blog" />
       </Head>
-      
+
       <div>
         <BannerLanding title="Blog" />
         <BlogSearch blogItems={blogItems} />
 
         <div id="main">
-        <section id="two" className="spotlights">
-    <section>
-  <Link href="/blog/scienceVsScientificCom" className="image">
-      <img src="/images/scienceVsScientificCom.jpg" alt="" />
-  </Link>
-  <div className="content">
-    <div className="inner">
-      <header className="major">
-        <h3 className="h3-responsive">Science Communication vs Scientific Communication: An Archaeological Perspective</h3>
-      </header>
-      <p className="author">by Jona Schlegel on 18.09.2023</p>
-      <p>
-        This post delves into the differences between science communication and scientific communication, particularly in the field of archaeology.
-      </p>
-      <ul className="actions">
-        <li>
-          <Link href="/blog/scienceVsScientificCom">
-            <a className="button">
-              Blog post here
-            </a>
-          </Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-        <section>
-  <Link href="/blog/archInk" className="image">
-    <img src="/images/archInk.jpg" alt="" />
-  </Link>
-  <div className="content">
-    <div className="inner">
-      <header className="major">
-        <h3 className="h3-responsive">#archInk: A Journey Through Ink and Archaeology</h3>
-      </header>
-      <p className="author">by Jona Schlegel on 11.09.2023</p>
-      <p>
-        This post explores archInk, inktober and science communication in the scope of archaeology.
-      </p>
-      <ul className="actions">
-        <li>
-          <Link href="/blog/archInk" className="button">
-            Blog post here
-          </Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-          <section>
-            <Link href="/blog/introduction" className="image">
-              <img src="/images/introduction.jpg" alt="" />
-            </Link>
-            <div className="content">
-            <div className="inner">
-              <header className="major">
-                <h3 className="h3-responsive">An introduction.</h3>
-              </header>
-              <p className="author">by Jona Schlegel on 08.12.2022</p>
-              <p>
-                In this bog post I will give an introduction of myself and why I
-                actually started this blog. Then I will go into what topics are
-                interesting to me and I might want to explore in the future and
-                how often and regular I will post. So, generally stay tuned.
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link href="/blog/introduction" className="button">
-                    Blog post here
-                  </Link>
-                </li>
-              </ul>
+          <section id="two" className="spotlights">
+            <section>
+              <Link href="/blog/scienceVsScientificCom" className="image">
+                <img src="/images/scienceVsScientificCom.jpg" alt="" />
+              </Link>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3 className="h3-responsive">
+                      Science Communication vs Scientific Communication: An
+                      Archaeological Perspective
+                    </h3>
+                  </header>
+                  <p className="author">by Jona Schlegel on 18.09.2023</p>
+                  <p>
+                    This post delves into the differences between science
+                    communication and scientific communication, particularly in
+                    the field of archaeology.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <Link href="/blog/scienceVsScientificCom">
+                        <a className="button">Blog post here</a>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </section>
-      
-           {/*  <section>
+            </section>
+            <section>
+              <Link href="/blog/archInk" className="image">
+                <img src="/images/archInk.jpg" alt="" />
+              </Link>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3 className="h3-responsive">
+                      #archInk: A Journey Through Ink and Archaeology
+                    </h3>
+                  </header>
+                  <p className="author">by Jona Schlegel on 11.09.2023</p>
+                  <p>
+                    This post explores archInk, inktober and science
+                    communication in the scope of archaeology.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <Link href="/blog/archInk" className="button">
+                        Blog post here
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section>
+              <Link href="/blog/introduction" className="image">
+                <img src="/images/introduction.jpg" alt="" />
+              </Link>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3 className="h3-responsive">An introduction.</h3>
+                  </header>
+                  <p className="author">by Jona Schlegel on 08.12.2022</p>
+                  <p>
+                    In this bog post I will give an introduction of myself and
+                    why I actually started this blog. Then I will go into what
+                    topics are interesting to me and I might want to explore in
+                    the future and how often and regular I will post. So,
+                    generally stay tuned.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <Link href="/blog/introduction" className="button">
+                        Blog post here
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/*  <section>
               <Link href="/blog/modelling" className="image">
                 <img src="/images/modelling.jpg" alt="" />
               </Link>
@@ -169,7 +176,6 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            
           </section>
         </div>
       </div>

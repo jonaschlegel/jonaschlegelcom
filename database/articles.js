@@ -1,5 +1,1 @@
-const articleItems = [
-    {
-        
-    }
-]
+const articleItems = [{}];

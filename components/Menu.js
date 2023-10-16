@@ -20,17 +20,17 @@ const Menu = (props) => (
             <span onClick={props.onToggleMenu}>Blog</span>
           </Link>
         </li>
-         <li>
+        <li>
           <Link href="/about">
-              <span onClick={props.onToggleMenu}>About</span>
+            <span onClick={props.onToggleMenu}>About</span>
           </Link>
         </li>
         <li>
           <Link href="/contact">
-              <span onClick={props.onToggleMenu}>Contact</span>
+            <span onClick={props.onToggleMenu}>Contact</span>
           </Link>
         </li>
-      {/*</ul>
+        {/*</ul>
       <ul className="actions vertical">
         <li>
           <a href="#" className="button special fit">

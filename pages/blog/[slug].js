@@ -1,117 +1,215 @@
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
-import Layout from '../../components/Layout';
 import Image from 'next/image';
+import Layout from '../../components/Layout';
 
 export const blogItems = {
   emergenceOfArchaeoIllustration: {
     id: 6,
-    title: 'Tracing Lines Through Time: The Emergence of Archaeological Illustration',
+    title:
+      'Tracing Lines Through Time: The Emergence of Archaeological Illustration',
     author: 'Jona Schlegel',
     date: '09.10.2023',
-    shortdescription: 'This post explores the origins and evolution of archaeological illustration, charting its journey from early documentations to a professional field.',
+    shortdescription:
+      'This post explores the origins and evolution of archaeological illustration, charting its journey from early documentations to a professional field.',
     image: '/images/emergenceOfArchaeoIllustration.jpg',
-    keywords: ['archaeological illustration', 'history', 'Victorian era', 'technology', 'professionalisation'],
+    keywords: [
+      'archaeological illustration',
+      'history',
+      'Victorian era',
+      'technology',
+      'professionalisation',
+    ],
     content: (
       <>
         <p className="author center">by Jona Schlegel on 09.10.2023</p>
         <p>
-          Archaeological illustration, the nexus between art and science, unveils the narrative of bygone eras, rendering the ancient tangible and comprehensible. The curiosity often piques when observing how a simple line or a sketch can transport one across the vast expanse of time, breathing life into relics and ruins.
+          Archaeological illustration, the nexus between art and science,
+          unveils the narrative of bygone eras, rendering the ancient tangible
+          and comprehensible. The curiosity often piques when observing how a
+          simple line or a sketch can transport one across the vast expanse of
+          time, breathing life into relics and ruins.
         </p>
-        <br/>
+        <br />
         <h3>The Dawn of Archaeological Illustration</h3>
         <p>
-          The nascent stage of archaeological illustration coincides with the inception of archaeology as a scientific discipline. Figures like Heinrich Schliemann, during the historic excavations at Troy, employed artists to document the unearthed treasures meticulously (Smith, 1988). Here marks the genesis of a lasting camaraderie between the inked line and the trowel.
+          The nascent stage of archaeological illustration coincides with the
+          inception of archaeology as a scientific discipline. Figures like
+          Heinrich Schliemann, during the historic excavations at Troy, employed
+          artists to document the unearthed treasures meticulously (Smith,
+          1988). Here marks the genesis of a lasting camaraderie between the
+          inked line and the trowel.
         </p>
-        <br/>
+        <br />
         <h3>Evolution Over Centuries</h3>
         <p>
-          As time marched on, the scope of archaeological illustration transcended mere documentation to encompass interpretation and reconstruction. The refinement of illustrative techniques, in sync with evolving archaeological methodologies, enriched the visual narrative of archaeological findings.
+          As time marched on, the scope of archaeological illustration
+          transcended mere documentation to encompass interpretation and
+          reconstruction. The refinement of illustrative techniques, in sync
+          with evolving archaeological methodologies, enriched the visual
+          narrative of archaeological findings.
         </p>
-        <br/>
+        <br />
         <h3>The Victorian Era: A Significant Epoch</h3>
         <p>
-          The Victorian era bore witness to a burgeoning fascination with the ancient world. Illustrations from this period not only documented the unearthed past but also fuelled public imagination. The detailed sketches from the Egypt Exploration Fund expeditions, for instance, transported the Egyptian past into the drawing rooms of Victorian England (Drower, 1995).
+          The Victorian era bore witness to a burgeoning fascination with the
+          ancient world. Illustrations from this period not only documented the
+          unearthed past but also fuelled public imagination. The detailed
+          sketches from the Egypt Exploration Fund expeditions, for instance,
+          transported the Egyptian past into the drawing rooms of Victorian
+          England (Drower, 1995).
         </p>
-        <br/>
+        <br />
         <h3>Technological Advancements</h3>
         <p>
-          The advent of photography introduced a new dimension to archaeological illustration. Yet, traditional illustrative techniques held their ground, offering interpretative insights that photographs alone could not capture.
+          The advent of photography introduced a new dimension to archaeological
+          illustration. Yet, traditional illustrative techniques held their
+          ground, offering interpretative insights that photographs alone could
+          not capture.
         </p>
-        <br/>
+        <br />
         <h3>The Professionalisation of the Field</h3>
         <p>
-          The 20th century heralded the establishment of professional bodies and academic courses, sharpening the skills of archaeological illustrators. The rise of organisations like the Institute for Archaeological Illustration and Graphics signalled a notable stride towards professionalisation (Jones, 2002).
+          The 20th century heralded the establishment of professional bodies and
+          academic courses, sharpening the skills of archaeological
+          illustrators. The rise of organisations like the Institute for
+          Archaeological Illustration and Graphics signalled a notable stride
+          towards professionalisation (Jones, 2002).
         </p>
-        <br/>
+        <br />
         <h3>Standardisation of Techniques</h3>
         <p>
-          The era of standardisation ushered in a uniformity in illustrative techniques, enhancing the accuracy and consistency in the visual communication of archaeological findings. This period saw the crafting of guidelines steering the presentation of archaeological illustrations, nurturing a harmonised dialogue between illustrators and archaeologists.
+          The era of standardisation ushered in a uniformity in illustrative
+          techniques, enhancing the accuracy and consistency in the visual
+          communication of archaeological findings. This period saw the crafting
+          of guidelines steering the presentation of archaeological
+          illustrations, nurturing a harmonised dialogue between illustrators
+          and archaeologists.
         </p>
-        <br/>
+        <br />
         <p>
-          A voyage through the annals of archaeological illustration unveils a rich narrative of evolving techniques and paradigms. From rudimentary beginnings, the field has morphed into a critical conduit of archaeological discourse. The modern-day manifestations, as seen through platforms like archaeoINK, echo the enduring significance of visual narratives in unravelling and communicating the intricacies of our shared past.
+          A voyage through the annals of archaeological illustration unveils a
+          rich narrative of evolving techniques and paradigms. From rudimentary
+          beginnings, the field has morphed into a critical conduit of
+          archaeological discourse. The modern-day manifestations, as seen
+          through platforms like archaeoINK, echo the enduring significance of
+          visual narratives in unravelling and communicating the intricacies of
+          our shared past.
         </p>
-        <br/>
+        <br />
         <h3>References</h3>
         <p>
-          Smith, P. (1988). Heinrich Schliemann’s illustrators: The archaeological vision of ancient Troy. Antiquity, 62(235), 273-287.
-          <br/>
-          Drower, M. (1995). Flinders Petrie: A Life in Archaeology. London: Victor Gollancz. pp. 184-192.
-          <br/>
-          Jones, M. (2002). The Professional Practice of Archaeological Illustration. Antiquity, 76(291), 209-217.
+          Smith, P. (1988). Heinrich Schliemann’s illustrators: The
+          archaeological vision of ancient Troy. Antiquity, 62(235), 273-287.
+          <br />
+          Drower, M. (1995). Flinders Petrie: A Life in Archaeology. London:
+          Victor Gollancz. pp. 184-192.
+          <br />
+          Jones, M. (2002). The Professional Practice of Archaeological
+          Illustration. Antiquity, 76(291), 209-217.
         </p>
       </>
     ),
   },
   scienceVsScientificCom: {
     id: 5,
-    title: 'Science Communication vs Scientific Communication: An Archaeological Perspective',
+    title:
+      'Science Communication vs Scientific Communication: An Archaeological Perspective',
     author: 'Jona Schlegel',
     date: '18.09.2023',
-    shortdescription: 'This post delves into the differences between science communication and scientific communication, particularly in the field of archaeology.',
+    shortdescription:
+      'This post delves into the differences between science communication and scientific communication, particularly in the field of archaeology.',
     image: '/images/scienceVsScientificCom.jpg',
-    keywords: ['archaeology', 'science communication', 'scientific communication', 'SciCom', 'SciComm'],
+    keywords: [
+      'archaeology',
+      'science communication',
+      'scientific communication',
+      'SciCom',
+      'SciComm',
+    ],
     content: (
       <>
         <p className="author center">by Jona Schlegel on the 18.09.2023</p>
         <p>
-          Ever wondered why some scientific discoveries make headlines, while others only appear in scholarly journals? The key lies in understanding two terms: "science communication" and "scientific communication." This is especially interesting in archaeology, where new findings can either become a public sensation or remain known only to experts.
+          Ever wondered why some scientific discoveries make headlines, while
+          others only appear in scholarly journals? The key lies in
+          understanding two terms: "science communication" and "scientific
+          communication." This is especially interesting in archaeology, where
+          new findings can either become a public sensation or remain known only
+          to experts.
         </p>
-        <br/>
+        <br />
         <h3>Talking Science to the Public</h3>
         <p>
-          First up is science communication. This is all about making science understandable and exciting for everyone, not just scientists. Think of it as translating "science speak" into everyday language. When archaeologists find a new ancient city, science communication turns that discovery into a story we all want to hear about.
+          First up is science communication. This is all about making science
+          understandable and exciting for everyone, not just scientists. Think
+          of it as translating "science speak" into everyday language. When
+          archaeologists find a new ancient city, science communication turns
+          that discovery into a story we all want to hear about.
         </p>
-        <br/>
+        <br />
         <h3>Scholarly Chats: The Other Side of the Coin</h3>
         <p>
-          Now, let's flip to the other side: scientific communication. This is where scientists talk to each other in their own language. They share new research, critique each other's work, and collaborate on projects. It's the behind-the-scenes action that happens before a discovery makes it to the news.
+          Now, let's flip to the other side: scientific communication. This is
+          where scientists talk to each other in their own language. They share
+          new research, critique each other's work, and collaborate on projects.
+          It's the behind-the-scenes action that happens before a discovery
+          makes it to the news.
         </p>
-        <br/>
-          <h3>Citing Scientific Endeavours</h3>
-          <p>
-          In scientific communication, referencing and citing peers' work is a cornerstone. It not only acknowledges the contributions of others but also provides a means to trace the lineage of knowledge, which is fundamental in a discipline like archaeology that thrives on cumulative understanding. For instance, a recent publication by Smith et al. (2023) in the Journal of Archaeological Science elucidates how meticulous documentation and peer engagement significantly propelled their research on ancient urban settlements.
+        <br />
+        <h3>Citing Scientific Endeavours</h3>
+        <p>
+          In scientific communication, referencing and citing peers' work is a
+          cornerstone. It not only acknowledges the contributions of others but
+          also provides a means to trace the lineage of knowledge, which is
+          fundamental in a discipline like archaeology that thrives on
+          cumulative understanding. For instance, a recent publication by Smith
+          et al. (2023) in the Journal of Archaeological Science elucidates how
+          meticulous documentation and peer engagement significantly propelled
+          their research on ancient urban settlements.
         </p>
-        <br/>
-        <img src="/images/blogPosts/VennDiagramSciComm.jpg" alt="Venn diagram showing the overlap of SciCom and SciComm" style={{ width: '100%', height: 'auto', objectFit: 'cover' }}/>
+        <br />
+        <img
+          src="/images/blogPosts/VennDiagramSciComm.jpg"
+          alt="Venn diagram showing the overlap of SciCom and SciComm"
+          style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+        />
         <h3>Two Sides of the Same Coin</h3>
         <p>
-          You might think these two types of communication are worlds apart, but they're more like two sides of the same coin. A well-studied archaeological site can be both a topic for a research paper and the subject of a gripping documentary.
+          You might think these two types of communication are worlds apart, but
+          they're more like two sides of the same coin. A well-studied
+          archaeological site can be both a topic for a research paper and the
+          subject of a gripping documentary.
         </p>
-        <br/>
+        <br />
         <h3>Engagement Beyond Academia</h3>
         <p>
-          Moreover, the symbiosis between science communication and scientific communication becomes particularly evident when considering the outreach initiatives in archaeology. Engaging the public in archaeological discoveries, through well-crafted narratives, not only piques their interest but also fosters a culture of appreciation towards our shared heritage. This in turn can catalyse support for archaeological endeavours, be it in the form of funding or policy formulation favouring archaeological explorations and conservation.
+          Moreover, the symbiosis between science communication and scientific
+          communication becomes particularly evident when considering the
+          outreach initiatives in archaeology. Engaging the public in
+          archaeological discoveries, through well-crafted narratives, not only
+          piques their interest but also fosters a culture of appreciation
+          towards our shared heritage. This in turn can catalyse support for
+          archaeological endeavours, be it in the form of funding or policy
+          formulation favouring archaeological explorations and conservation.
         </p>
-        <br/>
+        <br />
         <h3>Why Both Matter</h3>
         <p>
-          Here's the kicker: these two forms of communication need each other. Good science communication can inspire the next generation of archaeologists. At the same time, solid scientific communication makes sure that the field keeps growing and stays credible.
+          Here's the kicker: these two forms of communication need each other.
+          Good science communication can inspire the next generation of
+          archaeologists. At the same time, solid scientific communication makes
+          sure that the field keeps growing and stays credible.
         </p>
-        <br/>
-       <p>
-          Understanding the dichotomy between science communication and scientific communication is not an esoteric exercise but a pragmatic endeavour for anyone invested in the realm of science, more so for archaeologists. As we navigate through the complex tapestry of archaeological narratives, being adept in both forms of communication enriches the discipline, engenders a vibrant scholarly community, and enhances public engagement in unravelling the enigma of our past.
+        <br />
+        <p>
+          Understanding the dichotomy between science communication and
+          scientific communication is not an esoteric exercise but a pragmatic
+          endeavour for anyone invested in the realm of science, more so for
+          archaeologists. As we navigate through the complex tapestry of
+          archaeological narratives, being adept in both forms of communication
+          enriches the discipline, engenders a vibrant scholarly community, and
+          enhances public engagement in unravelling the enigma of our past.
         </p>
       </>
     ),
@@ -121,47 +219,112 @@ export const blogItems = {
     title: '#archInk: A Journey Through Ink and Archaeology',
     author: 'Jona Schlegel',
     date: '11.09.2023',
-    shortdescription: 'This post explores the intersection of ink drawing and archaeology through the #archInk initiative.',
+    shortdescription:
+      'This post explores the intersection of ink drawing and archaeology through the #archInk initiative.',
     image: '/images/archInk.jpg',
-    keywords: ['archaeology', 'ink', 'archaeoINK', 'archInk', 'Inktober', 'SciCom'],
+    keywords: [
+      'archaeology',
+      'ink',
+      'archaeoINK',
+      'archInk',
+      'Inktober',
+      'SciCom',
+    ],
     content: (
       <>
-      <p className="author center">by Jona Schlegel on the 11.09.2023</p>
+        <p className="author center">by Jona Schlegel on the 11.09.2023</p>
         <p>
-        In archaeology, the combination of art and science opens up exciting avenues for exploration. One standout example is #archInk, an initiative that fuses archaeological topics with the craft of (ink) drawing. This creative venture takes its cue from Inktober, a worldwide art challenge started in 2009 by Jake Parker. Originally aimed at honing his own drawing skills, Inktober has since inspired artists globally to create ink drawings all October long (Parker 2023). Just as "Inktober" melds "ink" with "October," #archInk cleverly combines "archaeology" and "ink" into a single, evocative term. 
+          In archaeology, the combination of art and science opens up exciting
+          avenues for exploration. One standout example is #archInk, an
+          initiative that fuses archaeological topics with the craft of (ink)
+          drawing. This creative venture takes its cue from Inktober, a
+          worldwide art challenge started in 2009 by Jake Parker. Originally
+          aimed at honing his own drawing skills, Inktober has since inspired
+          artists globally to create ink drawings all October long (Parker
+          2023). Just as "Inktober" melds "ink" with "October," #archInk
+          cleverly combines "archaeology" and "ink" into a single, evocative
+          term.
         </p>
-        <br/>
+        <br />
         <h3>The Origins of #archInk</h3>
         <p>
-        Dr. Katherine Cook, an archaeologist at the University of Montreal, Canada, kicked off #archInk in 2018. She designed it as a fun and educational way to spark creativity and fresh thinking in archaeology and anthropology students. Cook (2018) outlines the foundational principles of #archInk in her blog post, highlighting how it boosts creative communication and sharpens critical thinking skills. 
+          Dr. Katherine Cook, an archaeologist at the University of Montreal,
+          Canada, kicked off #archInk in 2018. She designed it as a fun and
+          educational way to spark creativity and fresh thinking in archaeology
+          and anthropology students. Cook (2018) outlines the foundational
+          principles of #archInk in her blog post, highlighting how it boosts
+          creative communication and sharpens critical thinking skills.
         </p>
-        <img 
-  src="/images/blogPosts/archInkPrompts.jpg" 
-  alt="archink prompt lists through the years" 
-  style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-/>
+        <img
+          src="/images/blogPosts/archInkPrompts.jpg"
+          alt="archink prompt lists through the years"
+          style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+        />
         <h3>My Personal Experience with #archInk</h3>
         <p>
-          Jumping into #archInk is like stepping into a new world. Back in October 2020, I dove in for the first time, keen on sharpening my skills in analogue pen ink drawings. Every now and then, I'd mix in some watercolour for a splash of vibrancy. The 2020 prompt list and the work of fellow participants pushed me to think outside the box. They challenged me to bring each #archInk theme to life in my own unique way, sparking a deeper interest in the intersection of art and archaeology. Fast forward to 2021, and an iPad entered the scene. This shift to digital art opened up a whole new playground for me. My digital drawings from October 2021, mostly in striking black lines, offered a fresh perspective and helped me level up my digital art game. Now, with October 2023 just around the bend, I'm all geared up to dive back into the #archInk experience. 
+          Jumping into #archInk is like stepping into a new world. Back in
+          October 2020, I dove in for the first time, keen on sharpening my
+          skills in analogue pen ink drawings. Every now and then, I'd mix in
+          some watercolour for a splash of vibrancy. The 2020 prompt list and
+          the work of fellow participants pushed me to think outside the box.
+          They challenged me to bring each #archInk theme to life in my own
+          unique way, sparking a deeper interest in the intersection of art and
+          archaeology. Fast forward to 2021, and an iPad entered the scene. This
+          shift to digital art opened up a whole new playground for me. My
+          digital drawings from October 2021, mostly in striking black lines,
+          offered a fresh perspective and helped me level up my digital art
+          game. Now, with October 2023 just around the bend, I'm all geared up
+          to dive back into the #archInk experience.
         </p>
-        <img 
-  src="/images/blogPosts/archInkMyDrawings.jpg" 
-  alt="archink prompt lists through the years" 
-  style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-/>
+        <img
+          src="/images/blogPosts/archInkMyDrawings.jpg"
+          alt="archink prompt lists through the years"
+          style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+        />
         <h3>#archInk and SciCom</h3>
         <p>
-        Art's role in scientific communication, or SciCom, is getting the spotlight it deserves. Take the study by Gonzalez et al. (2021), for example. They talked to artists in a travelling science museum and found that art does more than just look pretty. It sparks dialogue, challenges the way we think, and even changes how we feel about knowledge. The study shows that these travelling art projects can make science accessible to everyone, no matter where they are. Curtis et al. (2012) make a similar point. They say that adding a splash of art to scientific events can make the whole experience more engaging. It gets people thinking about new ways to talk about science, which is always a good thing. So, what does this mean for #archInk? Well, it turns this art challenge into a powerhouse for talking about archaeology. When you draw something for #archInk, you're not just making art; you're exploring the world of archaeology in a whole new way. And thanks to hashtags like #archInk on X (former Twitter) and Instagram, everyone can share their creations and learn from each other. But #archInk isn't just for October. If you're itching to get your hands dirty with some ink and archaeology, why wait? You can join #inktober52, which runs all year and gives you a new theme every week (Parker 2023). So, you can keep those creative juices flowing and maybe even come up with your own archaeological themes to explore. To see what I'm up to, give me a follow at @archaeoINK on Instagram. I'll be sharing my own blend of art and archaeology, and I can't wait to see what you'll bring to the table. So, also share your works starting on the first of October 2023 with the hashtag #archInk 
+          Art's role in scientific communication, or SciCom, is getting the
+          spotlight it deserves. Take the study by Gonzalez et al. (2021), for
+          example. They talked to artists in a travelling science museum and
+          found that art does more than just look pretty. It sparks dialogue,
+          challenges the way we think, and even changes how we feel about
+          knowledge. The study shows that these travelling art projects can make
+          science accessible to everyone, no matter where they are. Curtis et
+          al. (2012) make a similar point. They say that adding a splash of art
+          to scientific events can make the whole experience more engaging. It
+          gets people thinking about new ways to talk about science, which is
+          always a good thing. So, what does this mean for #archInk? Well, it
+          turns this art challenge into a powerhouse for talking about
+          archaeology. When you draw something for #archInk, you're not just
+          making art; you're exploring the world of archaeology in a whole new
+          way. And thanks to hashtags like #archInk on X (former Twitter) and
+          Instagram, everyone can share their creations and learn from each
+          other. But #archInk isn't just for October. If you're itching to get
+          your hands dirty with some ink and archaeology, why wait? You can join
+          #inktober52, which runs all year and gives you a new theme every week
+          (Parker 2023). So, you can keep those creative juices flowing and
+          maybe even come up with your own archaeological themes to explore. To
+          see what I'm up to, give me a follow at @archaeoINK on Instagram. I'll
+          be sharing my own blend of art and archaeology, and I can't wait to
+          see what you'll bring to the table. So, also share your works starting
+          on the first of October 2023 with the hashtag #archInk
         </p>
         <h3>References</h3>
         <p>
-        Curtis, D., Reid, N., & Ballard, G. (2012). Communicating ecology through art: what scientists think. Ecology and Society, 17(2). 
-        <br/>
-        Gonzalez, A., Bevilaqua, D., & Soares, M. (2021). Communicating science is an art! what do artists who work in an itinerant science museum say?. Actio Docência Em Ciências, 6(2), 1.
-        <br/>
-        Cook, K. 2018. Teaching & Learning Creative Habits: The Evolution of #archInk. UTP Teaching Culture Blog. Available at: http://www.utpteachingculture.com/teaching-learning-creative-habits-the-evolution-of-archink/ [Accessed 11 September 2023]. 
-        <br/>
-        Parker, J. 2023 Inktober. Available at: https://inktober.com [Accessed 11 September 2023].
+          Curtis, D., Reid, N., & Ballard, G. (2012). Communicating ecology
+          through art: what scientists think. Ecology and Society, 17(2).
+          <br />
+          Gonzalez, A., Bevilaqua, D., & Soares, M. (2021). Communicating
+          science is an art! what do artists who work in an itinerant science
+          museum say?. Actio Docência Em Ciências, 6(2), 1.
+          <br />
+          Cook, K. 2018. Teaching & Learning Creative Habits: The Evolution of
+          #archInk. UTP Teaching Culture Blog. Available at:
+          http://www.utpteachingculture.com/teaching-learning-creative-habits-the-evolution-of-archink/
+          [Accessed 11 September 2023].
+          <br />
+          Parker, J. 2023 Inktober. Available at: https://inktober.com [Accessed
+          11 September 2023].
         </p>
       </>
     ),
@@ -172,10 +335,17 @@ export const blogItems = {
     shortdescription:
       'This blog post will focus on what the purpose is of this blog, and what kind of topics I want to cover and how regularly I will try to upload a post.',
     image: '/images/introduction.jpg',
-    keywords: ['introduction', 'Jona Schlegel', 'archaeoINK', 'LBI ArchPro', 'work', 'experience'],
-      content: (
+    keywords: [
+      'introduction',
+      'Jona Schlegel',
+      'archaeoINK',
+      'LBI ArchPro',
+      'work',
+      'experience',
+    ],
+    content: (
       <>
-      <p className="author center">by Jona Schlegel on the 08.12.2022</p>
+        <p className="author center">by Jona Schlegel on the 08.12.2022</p>
         <p>
           Welcome to my blog! <br />
           My name is Jona Schlegel and I am a female archaeologist working at
@@ -222,8 +392,7 @@ export const blogItems = {
           graffiti data in a three-dimensional environment. Furthermore, I was
           part of the organisational team of the symposium goINDIGO in May 2022
           in Vienna. Connected to this symposium I also did a presentation and
-          wrote an article that will be published at the beginning of next
-          year.
+          wrote an article that will be published at the beginning of next year.
           <br />
           With this blog, I hope to improve my writing skills and share my
           thoughts and experiences on topics that are interesting to me,
@@ -249,11 +418,11 @@ export const blogItems = {
     title: 'How to create a 3D model',
     shortdescription:
       'In this blog post I will explore how I create 3D models with image-based modelling and tools like a mirrorless camera or my phone to get the data that will create me a 3D model with Metashape.',
-      image: '/images/modelling.jpg',
-      keywords: [],
-      content: (
+    image: '/images/modelling.jpg',
+    keywords: [],
+    content: (
       <>
-      <p className="author center">by Jona Schlegel on the dd.mm.yyyy</p>
+        <p className="author center">by Jona Schlegel on the dd.mm.yyyy</p>
         <p></p>
       </>
     ),
@@ -263,7 +432,15 @@ export const blogItems = {
     title: 'Why I draw archaeological related doodles',
     shortdescription: 'In this post I will explore, ',
     image: '/images/drawing.jpg',
-    keywords: ['drawing', 'art', 'archeoINK', 'illustrations', 'sketch', 'doodle', 'archaeology'],
+    keywords: [
+      'drawing',
+      'art',
+      'archeoINK',
+      'illustrations',
+      'sketch',
+      'doodle',
+      'archaeology',
+    ],
     content: (
       <>
         <p className="author center">by Jona Schlegel on the 08.12.2022</p>
@@ -409,9 +586,9 @@ export const blogItems = {
 
 export default function BlogItem() {
   const router = useRouter();
-  const { slug } = router.query; 
+  const { slug } = router.query;
 
-  const blogData = blogItems[slug]; 
+  const blogData = blogItems[slug];
 
   return (
     <Layout>
@@ -423,19 +600,24 @@ export default function BlogItem() {
         <section id="one">
           <div className="inner">
             <header className="major">
-              <div style={{ justifyContent: 'center', alignItems: 'center', maxWidth: '100%', overflow: 'hidden' }}>
+              <div
+                style={{
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  maxWidth: '100%',
+                  overflow: 'hidden',
+                }}
+              >
                 {blogData && (
-                  <Image 
-                    src={blogData.image} 
-                    alt={blogData.title} 
-                    width={500} 
-                    height={300} 
+                  <Image
+                    src={blogData.image}
+                    alt={blogData.title}
+                    width={500}
+                    height={300}
                   />
                 )}
               </div>
-              {blogData && (
-                <h1>{blogData.title}</h1>
-              )}
+              {blogData && <h1>{blogData.title}</h1>}
             </header>
             {blogData ? blogData.content : 'Loading...'}
           </div>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Header = (props) => (
   <header id="header" className="alt">
-    <Link href="/"  className="logo">
+    <Link href="/" className="logo">
       Home
     </Link>
     <nav>

@@ -2,7 +2,7 @@ const Footer = (props) => (
   <footer id="footer">
     <div className="inner">
       <ul className="icons">
-      <li>
+        <li>
           <a
             href="https://ko-fi.com/archaeoink"
             target="_blank"
@@ -13,7 +13,7 @@ const Footer = (props) => (
             <i className="fab fa-commenting-o fa-2x"></i>
           </a>
         </li>
-      <li>
+        <li>
           <a
             href="https://www.redbubble.com/people/archaeoink/shop"
             target="_blank"
@@ -24,7 +24,7 @@ const Footer = (props) => (
             <i className="fa fa-shopping-cart fa-2x"></i>
           </a>
         </li>
-      <li>
+        <li>
           <a
             href="https://www.etsy.com/at/shop/ArchaeoinkDrawings"
             target="_blank"

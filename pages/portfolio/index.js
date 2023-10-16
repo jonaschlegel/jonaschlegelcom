@@ -13,34 +13,33 @@ export default function Portfolio() {
       <div>
         <BannerLanding title="Portfolio" />
         <div id="main">
-
-        <section id="two" className="spotlights">
-          <section>
-          <Link href="/portfolio/3d-models" className="image">
+          <section id="two" className="spotlights">
+            <section>
+              <Link href="/portfolio/3d-models" className="image">
                 <img src="/images/3d_ipad.jpg" alt="" />
               </Link>
-            <div className="content">
-              <div className="inner">
-              <header className="major">
-                <Link href="/portfolio/3d-models" >
-                  <h3>3D models</h3>
-                </Link>
-              </header>
-              <p>
-                Here you find some models created with the methods of
-                image-based modelling and digital sculpting and uploaded on
-                Sketchfab.
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link href="/portfolio/3d-models" className="button">
-                    View models
-                  </Link>
-                </li>
-              </ul>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <Link href="/portfolio/3d-models">
+                      <h3>3D models</h3>
+                    </Link>
+                  </header>
+                  <p>
+                    Here you find some models created with the methods of
+                    image-based modelling and digital sculpting and uploaded on
+                    Sketchfab.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <Link href="/portfolio/3d-models" className="button">
+                        View models
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
             <section>
               <Link href="/portfolio/writing" className="image">
                 <img src="/images/writing.jpg" alt="" />

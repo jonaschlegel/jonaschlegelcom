@@ -1,15 +1,18 @@
-import { useEffect, useState } from 'react';
 import 'lightgallery/css/lightgallery.css';
 import lightGallery from 'lightgallery';
+import { useEffect, useState } from 'react';
 
 function ArtGallery() {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
     // List of image names in the directory
-    const imageNames = Array.from({ length: 21 }, (_, i) => `image${i + 1}.jpg`);
+    const imageNames = Array.from(
+      { length: 21 },
+      (_, i) => `image${i + 1}.jpg`,
+    );
 
-    setImages(imageNames.map(name => `/images/artGallery/${name}`));
+    setImages(imageNames.map((name) => `/images/artGallery/${name}`));
 
     const gallery = document.getElementById('my-gallery');
 
@@ -37,12 +40,15 @@ function ArtGallery() {
   }, [images]);
 
   return (
-    <div id="my-gallery" style={{ 
-      display: 'grid', 
-      gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
-      gridGap: '10px',
-      alignItems: 'center' // Align items vertically in the middle
-    }}>
+    <div
+      id="my-gallery"
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+        gridGap: '10px',
+        alignItems: 'center', // Align items vertically in the middle
+      }}
+    >
       {/* Images will be appended here */}
     </div>
   );

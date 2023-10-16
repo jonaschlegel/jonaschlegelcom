@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { projects } from '../database/projects'; // adjust the path according to your project structure
 
-
 const ProjectMaps = () => {
   const mapRef = useRef(null);
 
@@ -19,9 +18,12 @@ const ProjectMaps = () => {
       }).addTo(mapRef.current);
 
       if (projects) {
-        projects.forEach(project => {
-          L.marker([project.latitude, project.longitude]).addTo(mapRef.current)
-            .bindPopup(`<b>${project.project_name}</b><br>${project.description}`);
+        projects.forEach((project) => {
+          L.marker([project.latitude, project.longitude])
+            .addTo(mapRef.current)
+            .bindPopup(
+              `<b>${project.project_name}</b><br>${project.description}`,
+            );
         });
       }
 
