@@ -705,65 +705,59 @@ const portfolioItems = {
       <>
         <p>
           Art and archaeology share a collaborative history, a narrative that
-          has always intrigued me. As an illustrator, I frequently delve into
-          this interdisciplinary sphere. My tools of choice range from digital
-          applications like Procreate and Vectornator on my iPad, to traditional
-          pencil, ink, and watercolour on paper. Each medium, with its unique
-          texture and technique, offers a distinct pathway to depict
-          archaeological themes.
-        </p>
-        <p>
-          The primary aim behind my illustrations is to provide a precise and
-          visually appealing documentation of archaeological findings. Complex
-          or fragile artefacts, and sites shrouded in mystery due to their
-          inaccessibility, often unveil their stories more vividly through an
-          artistic lens. I also venture into the realm of interpretive
-          reconstructions, where art serves as a conduit to breathe life into
+          has always intrigued me, propelling me to frequently delve into this
+          interdisciplinary sphere as an illustrator. The tools I employ span
+          digital applications like Procreate and Vectornator on my iPad to
+          traditional mediums of pencil, ink, and watercolour on paper. Each
+          medium, with its unique texture and technique, unfurls a distinct
+          pathway to depict archaeological themes. The primary aim behind my
+          illustrations is to provide precise and visually appealing
+          documentation of archaeological findings. The stories of complex or
+          fragile artefacts and enigmatic sites often unveil more vividly
+          through an artistic lens. Venturing into the realm of interpretive
+          reconstructions, my art serves as a conduit to breathe life into
           ancient scenes or objects, making the past more tangible for both
           researchers and the public.
         </p>
         <p>
           Moreover, I find art to be a means of personal and collective
-          exploration. It’s not merely about creating aesthetically pleasing
-          visuals, but also about understanding and communicating complex
-          archaeological or historical themes. I often find that breaking down a
-          complex topic into a series of illustrations helps me grasp its
-          essence, and in turn, makes it more accessible to others.
-        </p>
-        <p>
-          I also enjoy creating maps, which are often laden with historical and
-          archaeological narratives waiting to be unfolded. The simplicity in
-          design, coupled with the richness of information, makes them a
-          fascinating aspect of my work.
-        </p>
-        <p>
-          Creating a colouring book page or a stippling art piece often becomes
-          an exercise in patience and precision, each dot or line bringing me
-          closer to the core of the subject I am exploring. It's a journey that
-          often yields a deeper understanding, not just of the subject matter,
-          but also of my own artistic capabilities.
-        </p>
-        <p>
-          I also engage in composing compositions of artefacts from specific
-          archaeological cultures. This form of illustrative storytelling allows
-          me to weave a narrative that encapsulates the material culture of a
-          particular time or place.
-        </p>
-        <p>
-          One of my notable projects was designing a cover page for a journal.
-          This task was an intersection of artistic expression and scholarly
-          communication, encapsulating the essence of the journal’s focus
-          through visual means.
-        </p>
-        <p>
+          exploration. It transcends the creation of aesthetically pleasing
+          visuals to understanding and communicating complex archaeological or
+          historical themes. Breaking down a complex topic into a series of
+          illustrations often demystifies its essence, making it more accessible
+          to others. I take pleasure in creating maps, laden with historical and
+          archaeological narratives waiting to be unfolded, where simplicity in
+          design melds with richness of information. Crafting a colouring book
+          page or a stippling art piece often morphs into an exercise in
+          patience and precision, each dot or line drawing me closer to the core
+          of the subject I am exploring. Engaging in compositions of artefacts
+          from specific archaeological cultures, I weave narratives that
+          encapsulate the material culture of particular epochs. A notable
+          endeavour was designing a cover page for a journal, a task that
+          intersected artistic expression with scholarly communication,
+          encapsulating the essence of the journal’s focus through visual means.
           The diverse styles and themes in my portfolio reflect my continuous
           exploration at the crossroads of art and archaeology. Each
-          illustration, be it a detailed rendering of an artefact, a map laden
+          illustration, whether a detailed rendering of an artefact, a map laden
           with historical narratives, or a whimsical colouring book page, is a
-          step towards making archaeology more engaging and accessible. Through
-          my work, I aim to contribute to the ongoing dialogue between art and
-          archaeology, each illustration a narrative unto itself, awaiting
-          engagement from curious minds.
+          stride towards making archaeology more engaging and accessible.
+          Through my work, I aspire to contribute to the ongoing dialogue
+          between art and archaeology, with each illustration standing as a
+          narrative unto itself, awaiting engagement from curious minds.
+        </p>
+        <p>
+          I am also open to taking on commission projects, extending my
+          illustrative journey to accommodate individual or institutional needs.
+          Discover more about my commission offerings and how we can collaborate
+          on{' '}
+          <a
+            href="https://ko-fi.com/archaeoink/commissions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            this page
+          </a>
+          .
         </p>
         <ArtGallery />
       </>
