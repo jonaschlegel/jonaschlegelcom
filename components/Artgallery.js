@@ -4,12 +4,18 @@ import { useEffect, useState } from 'react';
 
 function TagMenu({ tags, activeTags, onTagToggle }) {
   return (
-    <div className="tag-menu">
+    <div className="tag-menu" style={{ marginBottom: '10px' }}>
       {tags.map((tag) => (
         <button
           key={tag}
           className={activeTags.includes(tag) ? 'active' : ''}
           onClick={() => onTagToggle(tag)}
+          style={{
+            fontSize: '12px',
+            padding: '5px 10px',
+            margin: '2px',
+            borderRadius: '5px',
+          }}
         >
           {tag}
         </button>
@@ -21,7 +27,7 @@ function TagMenu({ tags, activeTags, onTagToggle }) {
 function ArtGallery() {
   const [images, setImages] = useState([]);
   const [activeTags, setActiveTags] = useState([]);
-  const [gallery, setGallery] = useState(null);
+  const galleryRef = useRef(null);
 
   useEffect(() => {
     const imageData = [
@@ -171,14 +177,6 @@ function ArtGallery() {
       },
     ];
     setImages(imageData);
-
-    const galleryElement = document.getElementById('my-gallery');
-    setGallery(galleryElement);
-    lightGallery(galleryElement);
-
-    return () => {
-      gallery && lightGallery(galleryElement).destroy(true);
-    };
   }, []);
 
   function toggleTag(tag) {
@@ -198,7 +196,7 @@ function ArtGallery() {
 
   useEffect(() => {
     if (gallery) {
-      gallery.innerHTML = ''; // Clear the existing images
+      gallery.innerHTML = '';
 
       filteredImages.forEach((image) => {
         const img = document.createElement('img');
@@ -212,7 +210,7 @@ function ArtGallery() {
 
       lightGallery(gallery);
     }
-  }, [filteredImages, gallery]);
+  }, [filteredImages]);
 
   const allTags = Array.from(new Set(images.flatMap((image) => image.tags)));
 
@@ -220,6 +218,7 @@ function ArtGallery() {
     <div>
       <TagMenu tags={allTags} activeTags={activeTags} onTagToggle={toggleTag} />
       <div
+        ref={galleryRef}
         id="my-gallery"
         style={{
           display: 'grid',
