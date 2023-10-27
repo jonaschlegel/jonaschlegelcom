@@ -71,22 +71,22 @@ export default function Portfolio() {
               </div>
             </section>
             <section>
-              <Link href="/portfolio/art" className="image">
+              <Link href="/portfolio/illustrations" className="image">
                 <img src="/images/art.jpg" alt="" />
               </Link>
               <div className="content">
                 <div className="inner">
                   <header className="major">
-                    <h3>Art</h3>
+                    <h3>Illustrations</h3>
                   </header>
                   <p>
-                    As an archaeologist and hobbyist artist, I enjoy creating
-                    art pieces that incorporate elements from the ancient past.
-                    My portfolio showcases a range of styles and mediums, from
-                    pencil sketches of historical buildings to colorful
-                    paintings of ancient artifacts. Through my art, I aim to
-                    bring the beauty and intrigue of the past to life and share
-                    my passion for archaeology with others.
+                    As an archaeologist and hobby illustrator, I enjoy creating
+                    pieces that incorporate elements from the ancient past. My
+                    portfolio showcases a range of styles and mediums, from
+                    pencil sketches of archaeological artifacts to colorful
+                    watercolor pieces. Through this hobby, I aim to bring the
+                    beauty and intrigue of the past to life and share my passion
+                    for archaeology with others.
                   </p>
                   <ul className="actions">
                     <li>

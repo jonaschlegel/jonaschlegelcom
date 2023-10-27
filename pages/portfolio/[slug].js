@@ -696,38 +696,74 @@ const portfolioItems = {
       </>
     ),
   },
-  art: {
+  illustrations: {
     id: 7,
-    title: 'Art in archaeology.',
+    title: 'Illustrating Archaeology.',
     shortdescription:
-      'Here you find my art works, my ko-fi page and my instagram account and several other aspects like challenges that are showcasing my art.',
+      'Here you find my illustrations in the different styles and on different topics.',
     content: (
       <>
         <p>
-          Art and archaeology have a long history of interaction and
-          collaboration. Archaeologists often use artistic techniques and skills
-          to record, reconstruct, and interpret the objects, structures, and
-          landscapes they study. This can include drawing, photography,
-          sculpture, and other forms of artistic expression.
+          Art and archaeology share a collaborative history, a narrative that
+          has always intrigued me. As an illustrator, I frequently delve into
+          this interdisciplinary sphere. My tools of choice range from digital
+          applications like Procreate and Vectornator on my iPad, to traditional
+          pencil, ink, and watercolour on paper. Each medium, with its unique
+          texture and technique, offers a distinct pathway to depict
+          archaeological themes.
         </p>
         <p>
-          Art can be a valuable tool in archaeology for several reasons.
-          Firstly, it allows archaeologists to record and document their
-          findings in a precise and visually appealing way. This can be
-          especially important for complex or fragile artifacts, or for sites
-          that are difficult to access or study. Secondly, art can be used to
-          create realistic or interpretive reconstructions of ancient scenes or
-          objects, which can help to bring the past to life for researchers and
-          the public.
+          The primary aim behind my illustrations is to provide a precise and
+          visually appealing documentation of archaeological findings. Complex
+          or fragile artefacts, and sites shrouded in mystery due to their
+          inaccessibility, often unveil their stories more vividly through an
+          artistic lens. I also venture into the realm of interpretive
+          reconstructions, where art serves as a conduit to breathe life into
+          ancient scenes or objects, making the past more tangible for both
+          researchers and the public.
         </p>
         <p>
-          In addition to its use as a scientific tool, art can also be a popular
-          hobby among archaeologists and others interested in the past. Many
-          archaeologists enjoy creating art as a way to relax and express their
-          passion for the field. This can take the form of sketches, paintings,
-          sculptures, or other artistic mediums. Art can also be a way for
-          archaeologists to connect with others who share their interests, and
-          to engage the public in the study of the past.
+          Moreover, I find art to be a means of personal and collective
+          exploration. It’s not merely about creating aesthetically pleasing
+          visuals, but also about understanding and communicating complex
+          archaeological or historical themes. I often find that breaking down a
+          complex topic into a series of illustrations helps me grasp its
+          essence, and in turn, makes it more accessible to others.
+        </p>
+        <p>
+          I also enjoy creating maps, which are often laden with historical and
+          archaeological narratives waiting to be unfolded. The simplicity in
+          design, coupled with the richness of information, makes them a
+          fascinating aspect of my work.
+        </p>
+        <p>
+          Creating a colouring book page or a stippling art piece often becomes
+          an exercise in patience and precision, each dot or line bringing me
+          closer to the core of the subject I am exploring. It's a journey that
+          often yields a deeper understanding, not just of the subject matter,
+          but also of my own artistic capabilities.
+        </p>
+        <p>
+          I also engage in composing compositions of artefacts from specific
+          archaeological cultures. This form of illustrative storytelling allows
+          me to weave a narrative that encapsulates the material culture of a
+          particular time or place.
+        </p>
+        <p>
+          One of my notable projects was designing a cover page for a journal.
+          This task was an intersection of artistic expression and scholarly
+          communication, encapsulating the essence of the journal’s focus
+          through visual means.
+        </p>
+        <p>
+          The diverse styles and themes in my portfolio reflect my continuous
+          exploration at the crossroads of art and archaeology. Each
+          illustration, be it a detailed rendering of an artefact, a map laden
+          with historical narratives, or a whimsical colouring book page, is a
+          step towards making archaeology more engaging and accessible. Through
+          my work, I aim to contribute to the ongoing dialogue between art and
+          archaeology, each illustration a narrative unto itself, awaiting
+          engagement from curious minds.
         </p>
         <ArtGallery />
       </>
