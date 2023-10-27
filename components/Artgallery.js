@@ -5,12 +5,6 @@ import { useEffect, useState } from 'react';
 function TagMenu({ tags, activeTags, onTagToggle }) {
   return (
     <div className="tag-menu">
-      <button
-        className={activeTags.includes('all') ? 'active' : ''}
-        onClick={() => onTagToggle('all')}
-      >
-        All
-      </button>
       {tags.map((tag) => (
         <button
           key={tag}
@@ -26,7 +20,8 @@ function TagMenu({ tags, activeTags, onTagToggle }) {
 
 function ArtGallery() {
   const [images, setImages] = useState([]);
-  const [activeTags, setActiveTags] = useState(['all']);
+  const [activeTags, setActiveTags] = useState([]);
+  const [gallery, setGallery] = useState(null);
 
   useEffect(() => {
     const imageData = [
@@ -177,51 +172,47 @@ function ArtGallery() {
     ];
     setImages(imageData);
 
-    const gallery = document.getElementById('my-gallery');
+    const galleryElement = document.getElementById('my-gallery');
+    setGallery(galleryElement);
+    lightGallery(galleryElement);
 
     return () => {
-      while (gallery.firstChild) {
-        gallery.firstChild.remove();
-      }
+      gallery && lightGallery(galleryElement).destroy(true);
     };
   }, []);
 
   function toggleTag(tag) {
     setActiveTags((prevTags) =>
-      tag === 'all'
-        ? ['all']
-        : prevTags.includes(tag)
-        ? prevTags.filter((t) => t !== tag && t !== 'all')
-        : [...prevTags.filter((t) => t !== 'all'), tag],
+      prevTags.includes(tag)
+        ? prevTags.filter((t) => t !== tag)
+        : [...prevTags, tag],
     );
   }
 
-  const filteredImages = images.filter((image) =>
-    activeTags.every((tag) => image.tags.includes(tag)),
-  );
+  const filteredImages =
+    activeTags.length > 0
+      ? images.filter((image) =>
+          activeTags.every((tag) => image.tags.includes(tag)),
+        )
+      : images;
 
   useEffect(() => {
-    const gallery = document.getElementById('my-gallery');
-    if (gallery.getAttribute('data-lg-uid')) {
-      lightGallery(gallery).destroy(true);
+    if (gallery) {
+      gallery.innerHTML = ''; // Clear the existing images
+
+      filteredImages.forEach((image) => {
+        const img = document.createElement('img');
+        img.src = image.src;
+        img.setAttribute('data-src', image.src);
+        img.setAttribute('data-sub-html', image.tags.join(', '));
+        img.style.width = '100%';
+        img.style.height = 'auto';
+        gallery.appendChild(img);
+      });
+
+      lightGallery(gallery);
     }
-
-    if (activeTags.includes('all')) {
-      return;
-    }
-
-    filteredImages.forEach((image) => {
-      const img = document.createElement('img');
-      img.src = image.src;
-      img.setAttribute('data-src', image.src);
-      img.setAttribute('data-sub-html', image.tags.join(', '));
-      img.style.width = '100%';
-      img.style.height = 'auto';
-      gallery.appendChild(img);
-    });
-
-    lightGallery(gallery);
-  }, [filteredImages, activeTags]);
+  }, [filteredImages, gallery]);
 
   const allTags = Array.from(new Set(images.flatMap((image) => image.tags)));
 
@@ -231,7 +222,7 @@ function ArtGallery() {
       <div
         id="my-gallery"
         style={{
-          display: activeTags.includes('all') ? 'none' : 'grid',
+          display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
           gridGap: '10px',
           alignItems: 'center',
