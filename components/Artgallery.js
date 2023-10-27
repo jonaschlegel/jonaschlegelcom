@@ -195,21 +195,20 @@ function ArtGallery() {
       : images;
 
   useEffect(() => {
-    if (gallery) {
-      gallery.innerHTML = '';
+    const gallery = galleryRef.current;
+    gallery.innerHTML = '';
 
-      filteredImages.forEach((image) => {
-        const img = document.createElement('img');
-        img.src = image.src;
-        img.setAttribute('data-src', image.src);
-        img.setAttribute('data-sub-html', image.tags.join(', '));
-        img.style.width = '100%';
-        img.style.height = 'auto';
-        gallery.appendChild(img);
-      });
+    filteredImages.forEach((image) => {
+      const img = document.createElement('img');
+      img.src = image.src;
+      img.setAttribute('data-src', image.src);
+      img.setAttribute('data-sub-html', image.tags.join(', '));
+      img.style.width = '100%';
+      img.style.height = 'auto';
+      gallery.appendChild(img);
+    });
 
-      lightGallery(gallery);
-    }
+    lightGallery(gallery);
   }, [filteredImages]);
 
   const allTags = Array.from(new Set(images.flatMap((image) => image.tags)));
