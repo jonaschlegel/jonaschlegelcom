@@ -90,7 +90,7 @@ export default function Portfolio() {
                   </p>
                   <ul className="actions">
                     <li>
-                      <Link href="/portfolio/art" className="button">
+                      <Link href="/portfolio/illustrations" className="button">
                         View my art
                       </Link>
                     </li>

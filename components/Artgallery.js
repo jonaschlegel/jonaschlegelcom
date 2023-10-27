@@ -5,6 +5,12 @@ import { useEffect, useState } from 'react';
 function TagMenu({ tags, activeTags, onTagToggle }) {
   return (
     <div className="tag-menu">
+      <button
+        className={activeTags.includes('all') ? 'active' : ''}
+        onClick={() => onTagToggle('all')}
+      >
+        All
+      </button>
       {tags.map((tag) => (
         <button
           key={tag}
@@ -20,10 +26,9 @@ function TagMenu({ tags, activeTags, onTagToggle }) {
 
 function ArtGallery() {
   const [images, setImages] = useState([]);
-  const [activeTags, setActiveTags] = useState([]);
+  const [activeTags, setActiveTags] = useState(['all']);
 
   useEffect(() => {
-    // Assuming you have a more complex way to fetch images and tags
     const imageData = [
       {
         src: '/images/artGallery/image1.jpg',
@@ -183,9 +188,11 @@ function ArtGallery() {
 
   function toggleTag(tag) {
     setActiveTags((prevTags) =>
-      prevTags.includes(tag)
-        ? prevTags.filter((t) => t !== tag)
-        : [...prevTags, tag],
+      tag === 'all'
+        ? ['all']
+        : prevTags.includes(tag)
+        ? prevTags.filter((t) => t !== tag && t !== 'all')
+        : [...prevTags.filter((t) => t !== 'all'), tag],
     );
   }
 
@@ -195,6 +202,14 @@ function ArtGallery() {
 
   useEffect(() => {
     const gallery = document.getElementById('my-gallery');
+    if (gallery.getAttribute('data-lg-uid')) {
+      lightGallery(gallery).destroy(true);
+    }
+
+    if (activeTags.includes('all')) {
+      return;
+    }
+
     filteredImages.forEach((image) => {
       const img = document.createElement('img');
       img.src = image.src;
@@ -206,9 +221,8 @@ function ArtGallery() {
     });
 
     lightGallery(gallery);
-  }, [filteredImages]);
+  }, [filteredImages, activeTags]);
 
-  // Collecting all unique tags from images
   const allTags = Array.from(new Set(images.flatMap((image) => image.tags)));
 
   return (
@@ -217,14 +231,12 @@ function ArtGallery() {
       <div
         id="my-gallery"
         style={{
-          display: 'grid',
+          display: activeTags.includes('all') ? 'none' : 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
           gridGap: '10px',
           alignItems: 'center',
         }}
-      >
-        {/* Images will be appended here by the second useEffect */}
-      </div>
+      ></div>
     </div>
   );
 }
