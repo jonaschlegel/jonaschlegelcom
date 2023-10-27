@@ -1,6 +1,6 @@
 import 'lightgallery/css/lightgallery.css';
 import lightGallery from 'lightgallery';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function TagMenu({ tags, activeTags, onTagToggle }) {
   return (
