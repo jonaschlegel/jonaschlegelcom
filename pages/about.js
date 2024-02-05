@@ -32,19 +32,27 @@ const AboutPage = () => {
               <h2>About Me</h2>
             </header>
             <div>
-              <h4>Current Employment</h4>
+              <h4>My current path</h4>
               <p>
-                Currently employed at the Ludwig Boltzmann Institute for
-                Archaeological Prospection and Virtual Archaeology, the focus
-                lies on motorised large-scale geophysical prospection and GIS
-                interpretations. Additionally, responsibilities extend to the
+                Since February 2024 I am available as a freelancer to consult
+                with web development, science communication and especially the
+                creation of (scientific) illustrations. Reach out and contact me
+                for more information.
+              </p>
+              <h4>Old Employment</h4>
+              <p>
+                Up until September 2023 I was employed at the Ludwig Boltzmann
+                Institute for Archaeological Prospection and Virtual
+                Archaeology, my work focus was on motorised large-scale
+                geophysical prospection and geographic information systems (GIS)
+                interpretations. Additionally, my responsibilities extend to the
                 INDIGO project, which involves monitoring graffiti along the
                 Danube Canal in Vienna. Tasks include the creation of a graffiti
                 thesaurus, the graffito metadata schema, and the authoring of
                 scientific papers.
               </p>
 
-              <h3>Personal Website</h3>
+              <h4>Personal Website</h4>
               <p>
                 This website serves as a platform to showcase a diverse
                 portfolio, which includes but is not limited to, archaeological
@@ -59,14 +67,6 @@ const AboutPage = () => {
                 research papers, and methodologies employed in archaeological
                 prospection. It serves as a comprehensive repository of work,
                 providing valuable insights into the field of archaeology.
-              </p>
-
-              <h4>Blog</h4>
-              <p>
-                The blog serves as a medium to share knowledge and insights into
-                the world of archaeology. It covers a wide range of topics, from
-                the latest advancements in archaeological prospection to deep
-                dives into historical periods and sites.
               </p>
 
               <h4>Art and Social Media</h4>

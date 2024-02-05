@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { projects } from '../database/projects'; // adjust the path according to your project structure
+import { projects } from '../database/projects';
 
 const ProjectMaps = () => {
   const mapRef = useRef(null);
@@ -9,7 +9,7 @@ const ProjectMaps = () => {
       const L = require('leaflet');
 
       mapRef.current = L.map('map', {
-        center: [51.505, -0.09], // Initial map center coordinates
+        center: [51.505, -0.09],
         zoom: 13,
       });
 
